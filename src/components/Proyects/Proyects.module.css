@@ -1,0 +1,84 @@
+.proyects{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center; 
+     margin-top: var(--margin-top-section);
+}
+.proyects h1{
+    text-align: center;
+    letter-spacing: 8px;
+    color: white;
+    font-size: 60px;
+    margin-bottom: 110px;
+}
+.proyects div{
+    display: flex;
+    justify-content: center;
+}
+
+.circleV{
+border-radius: 50%;
+height: 290px;
+width: 290px;
+background-color: #985D5F;
+margin: 30px 215px 20px 20px;
+list-style:none;
+}
+
+.circleInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.solapa{
+    height: 42px;
+    width: 170px;
+    background-color: var(--background-container);
+    border-radius: 10px 10px 0px 0px;
+    
+}
+.solapa ul{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.solapa ul li{
+    margin: 10px;
+}
+.solapa ul li img{
+    height: 30px;
+    
+
+}
+.CircleText{
+    height: 150px;
+    width: 300px;
+    background-color: var(--background-container);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.CircleText p{
+    margin: 3%;
+}
+@media  (max-width: 700px) {
+  
+ .proyects div{
+    flex-direction: column;
+    align-items: center;
+ }
+ .circleV{
+    margin: 1rem 0rem;
+ }
+    }
+  
+  

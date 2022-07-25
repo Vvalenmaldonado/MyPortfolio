@@ -1,0 +1,69 @@
+.displayNone{
+    display: none;
+  }
+.navIcon5{
+  width: 21px;
+  height: 20px;
+  margin: 8px 61px 8px 6px;
+    position: relative;
+    cursor: pointer;
+    background-color: #1d1e22;
+    border: 0px;
+    
+  }
+  .navIcon5 span{
+    background-color:#fff;
+    position: absolute;
+    border-radius: 2px;
+    transition: .3s cubic-bezier(.8, .5, .2, 1.4);
+    width:100%;
+    height: 3px;
+    transition-duration: 500ms;
+    z-index: 3;
+    
+  }
+  .navIcon5 span:nth-child(1){
+    top:0px;
+    left: 0px;
+  }
+  .navIcon5 span:nth-child(2){
+    top:8px;
+    left: 0px;
+    opacity:1;
+  }
+  .navIcon5 span:nth-child(3){
+    bottom:0px;
+    left: 0px;
+  }
+  .navIcon5:not(.open):hover span:nth-child(1){
+    transform: rotate(-3deg) scaleY(1.1);
+  }
+  .navIcon5:not(.open):hover span:nth-child(2){
+    transform: rotate(3deg) scaleY(1.1);
+  }
+  .navIcon5:not(.open):hover span:nth-child(3){
+    transform: rotate(-4deg) scaleY(1.1);
+  }
+  .navIcon5.open span:nth-child(1){
+    transform: rotate(45deg);
+    top: 13px;
+  }
+  .navIcon5.open span:nth-child(2){
+    opacity:0;
+  }
+  .navIcon5.open span:nth-child(3){
+    transform: rotate(-45deg);
+    top: 13px;
+  }
+
+
+
+  @media  screen and (max-width:1024px) {
+   
+    .displayNone{
+      display: flex;
+    }
+  
+
+  }
+  

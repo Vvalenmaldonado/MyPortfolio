@@ -1,0 +1,101 @@
+.wrapperContainerMargin{
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+.aboutMe {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #00000063;
+    height: 100%;
+    transform-origin: top right;
+    transform: skewY(-6deg);  
+ 
+}
+.wrapperContainer{
+    transform-origin: top right;
+    transform: skewY(6deg);
+
+}
+.aboutMe h1 {
+    color: white;
+    font-size: 60px;
+    align-items:center;
+    margin-left: 3%;
+    position: relative;
+    bottom: 3rem;
+    letter-spacing: 8px;
+}
+.aboutMe h2{
+    font-size: 2.8rem;
+   
+}
+.containerImageW{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+ 
+}
+
+
+.article {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+   padding: 10rem 0 4rem 0;
+}
+.aboutMe .border{
+    border-radius: 50%;
+    background:rgb(0, 0, 0);
+}
+.aboutMe .borderG{
+    border-radius: 50%;
+    padding: 0.5rem;
+    background: linear-gradient(243deg, rgba(32,14,167,1) 30%, rgb(108, 60, 175) 60%);
+}
+.border img{
+    object-fit: cover;
+    width: clamp(24rem, 17rem + 16vw, 29rem);
+    
+
+}
+
+.boxOpacity p{
+    text-align: center;
+    padding: clamp(1rem, -1.1rem + 4.8vw, 2.5rem);
+    font-size: clamp(1rem, 0.58rem + 0.96vw, 1.3rem);
+}
+.description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.whatILike {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.whatILike span{
+    font-size: 2rem;
+}
+.whatILike img{
+    margin-right: 1rem;
+}
+
+@media  (max-width: 700px) {
+  
+  .article{
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .description{
+    width: 100%;
+  }
+  }
+

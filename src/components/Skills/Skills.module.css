@@ -1,0 +1,115 @@
+.skill{
+    margin-top: 12rem;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height:100%;
+}
+.wrapperContainerMargin{
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+.skill h1{
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 60px;
+    margin-bottom: 80px;
+}
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;   
+}
+.text{
+    text-align: end;
+    margin-bottom: 20px;
+}
+.skillText{
+    font-size: clamp(1rem, 0.58rem + 0.96vw, 1.3rem);
+    padding:clamp(0.5rem, -2.3rem + 6.4vw, 2.5rem);
+   width: 50%;
+}
+.boxIcon{
+
+    background:#ffffff12;
+    border-radius: 15px;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: max-content;
+    margin: 0 1rem;
+    padding-left: clamp(0.8rem, -0.4rem + 3.2vw, 2rem);
+    padding-bottom: clamp(0.8rem, -0.4rem + 3.2vw, 2rem);
+    padding-right: clamp(0.8rem, -0.4rem + 3.2vw, 2rem);
+    
+}
+
+.boxIconTools{
+  margin-top: 4rem;
+}
+.boxIcon ul  {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+list-style:none;
+align-items: flex-start;
+width: 100%;
+
+}
+.boxIcon ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+     flex: 1;
+    text-align: center;
+    margin: 0.8rem 1rem;
+}
+.boxIcon ul li img{
+    width: clamp(2.2rem, 1.45rem + 3vw, 3.7rem);
+}
+.boxIcon .reactI img{
+    width: 120px; 
+    margin-bottom: 0.6rem;
+}
+.boxIcon .reactI{
+    align-self: flex-end;
+}
+.boxIcon ul li span{
+    font-size: 1rem;
+}
+.boxIcon ul li img:last-child{
+    width: 50px !important;
+}
+.boxIcon h3{
+    letter-spacing: 5px;
+    padding-top: 1rem;
+    font-size: clamp(1.8rem, 0.96rem + 1.92vw, 2.4rem);
+}
+
+@media  (max-width: 700px) {
+  
+    .info{
+        flex-direction: column;
+    }
+    .skillText{
+padding: 1rem;
+       width: 100%;
+    }
+    .wrapperContainerMargin{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 495px;
+        margin: 0 auto;
+       
+    }
+    .boxIcon{
+        width: 100%;;
+    }
+    
+  }
