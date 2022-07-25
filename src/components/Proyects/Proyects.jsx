@@ -7,7 +7,6 @@ export const Proyects = () => {
   return (
     <section className={style.proyects}>
       <h1>Proyects</h1>
-
       <div>
         <div className={style.circle}>
           <ul>
