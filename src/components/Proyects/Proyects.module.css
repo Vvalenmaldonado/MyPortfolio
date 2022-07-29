@@ -7,6 +7,17 @@
      align-items: center; 
      margin-top: var(--margin-top-section);
 }
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerCard{
+    width: 100%;
+    padding: 1rem 0rem;
+}
 .proyects h1{
     text-align: center;
     letter-spacing: 8px;
@@ -18,20 +29,26 @@
     display: flex;
     justify-content: center;
 }
-
-.circleV{
-border-radius: 50%;
-height: 290px;
-width: 290px;
-background-color: #985D5F;
-margin: 30px 215px 20px 20px;
-list-style:none;
+.circle{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
-
+.circle img{
+    width: 60%;
+    padding: .5rem;
+    object-fit: cover;
+}
+.circle img:last-child:not(.redS){
+    width: 8rem;
+}
 .circleInfo{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
 }
 
 
@@ -40,7 +57,6 @@ list-style:none;
     width: 170px;
     background-color: var(--background-container);
     border-radius: 10px 10px 0px 0px;
-    
 }
 .solapa ul{
     list-style:none;
@@ -54,8 +70,6 @@ list-style:none;
 }
 .solapa ul li img{
     height: 30px;
-    
-
 }
 .CircleText{
     height: 150px;
@@ -65,20 +79,20 @@ list-style:none;
     text-align: center;
     display: flex;
     flex-direction: column;
-    
 }
 .CircleText p{
     margin: 3%;
 }
 @media  (max-width: 700px) {
   
- .proyects div{
+ .proyects .containerCard{
     flex-direction: column;
     align-items: center;
  }
- .circleV{
-    margin: 1rem 0rem;
- }
+ .circle{
+    width: 80%;
+}
+
     }
   
   

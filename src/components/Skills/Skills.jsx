@@ -13,10 +13,10 @@ export const Skills = () => {
           <div className={style.skillText}>
             <div className={style.text}>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit
-                convallis, eros aliquam per sem maecenas blandit primis libero,
-                odio pretium nascetur rutrum <br /> bibendum ante potenti.
-                Eleifend lacus lectus habitant ridiculus ullamcorper augue{' '}
+                Durante mi proceso de aprendizaje como desarrolladora front-end,
+                utilice la plataforma Udemy y Youtube para consumir cursos que
+                me ensenen todas las herramientas y technologias necesarias para
+                la creacion de sitios web.
               </p>
             </div>
             <div>
