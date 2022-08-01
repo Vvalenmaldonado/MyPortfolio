@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import emailjs from 'emailjs-com';
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import style from './Contact.module.css';
@@ -23,14 +24,38 @@ export const Contact = () => {
         <div className={style.talk}>
           <h1>Contact</h1>
           <div className={style.imgsT}>
-            <img src="images/contact/seed-of-life.png" alt="h" />
-            <img
+            <motion.img
+              animate={{ y: 50 }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                repeatType: 'reverse',
+              }}
+              src="images/contact/seed-of-life.png"
+              alt="h"
+            />
+            <motion.img
+              animate={{ y: -30 }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                repeatType: 'reverse',
+              }}
               className={style.second}
               src="images/contact/unicursal-hexagram.png"
               alt="hexagram"
             />
 
-            <img src="images/contact/hexagram.png" alt="h" />
+            <motion.img
+              animate={{ x: -40 }}
+              transition={{
+                duration: 3.5,
+                repeat: Infinity,
+                repeatType: 'reverse',
+              }}
+              src="images/contact/hexagram.png"
+              alt="h"
+            />
             <div className={style.containerLT}>
               <span>Let's </span>
               <span className={style.talkText}>Talk</span>
@@ -44,26 +69,89 @@ export const Contact = () => {
             <img src="images/contact/correo-electronico.png" alt="correo" />
           </div>
 
-          <label>Full name</label>
-          <input type="text" placeholder="Full name" name="name" />
-          <label>Email</label>
-          <input
+          <motion.label
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+          >
+            Full name
+          </motion.label>
+          <motion.input
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            type="text"
+            placeholder="Full name"
+            name="name"
+          />
+          <motion.label
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{ delay: 0.2 }}
+          >
+            Email
+          </motion.label>
+          <motion.input
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{ delay: 0.2 }}
             type="text"
             placeholder="Ej: name.lastname@gmail.com"
             name="user-email"
           />
 
-          <label>Message</label>
-          <input
+          <motion.label
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{ delay: 0.4 }}
+          >
+            Message
+          </motion.label>
+          <motion.input
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{ delay: 0.4 }}
             name="message"
             class="message"
             type="text"
             placeholder="What do you need?"
             style={{ height: '114px' }}
           />
-          <button type="submit" value="send">
+          <motion.button
+            viewport={{ once: true }}
+            initial={{ opacity: 0, y: -60 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{ delay: 0.6 }}
+            type="submit"
+            value="send"
+          >
             <span>SEND</span>
-          </button>
+          </motion.button>
         </form>
       </section>
       <div className={style.iconss}>

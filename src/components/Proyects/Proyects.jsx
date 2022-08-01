@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import React from 'react';
 
@@ -11,16 +12,38 @@ export const Proyects = () => {
       <div className={style.wrapper}>
         <h1>Proyects</h1>
         <div className={style.containerCard}>
-          <div className={style.circle}>
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, x: -60 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{
+              damping: 150,
+              stiffness: 500,
+              type: 'spring',
+            }}
+            className={style.circle}
+          >
             <Link href="http://www.lavozdemonte.com" passHref>
               <img src="images/proyects/lavozdemontepngg.png" alt="" />
             </Link>
             <Link href="http://www.lavozdemonte.com" passHref>
               <img src="images/proyects/lavozdemontemobile.png" alt="" />
             </Link>
-          </div>
+          </motion.div>
 
-          <div className={style.circleInfo}>
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{ damping: 150, stiffness: 500, type: 'spring' }}
+            className={style.circleInfo}
+          >
             <div className={style.solapa}>
               <ul>
                 <li>
@@ -46,17 +69,35 @@ export const Proyects = () => {
                 </p>
               </div>
             </Link>
-          </div>
+          </motion.div>
         </div>
         <div className={style.containerCard}>
           <Link href="https://ableton-frontend-practice.vercel.app/" passHref>
-            <div className={style.circle}>
+            <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ damping: 150, stiffness: 500, type: 'spring' }}
+              className={style.circle}
+            >
               <img src="images/proyects/abletonN.png" alt="" />
               <img src="images/proyects/AbletonMobilee.png" alt="" />
-            </div>
+            </motion.div>
           </Link>
 
-          <div className={style.circleInfo}>
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{ damping: 150, stiffness: 500, type: 'spring' }}
+            className={style.circleInfo}
+          >
             <div className={style.solapa}>
               <ul>
                 <li>
@@ -76,7 +117,7 @@ export const Proyects = () => {
                 <p>Practica personal. Utilizando HTML, CSS y Javascript</p>
               </div>
             </Link>
-          </div>
+          </motion.div>
         </div>
         <div className={style.containerCard}>
           <div className={style.circle}>
@@ -84,14 +125,30 @@ export const Proyects = () => {
               href="https://red-square-clon-bg4vz9cvf-vvalenmaldonado.vercel.app/"
               passHref
             >
-              <img
+              <motion.img
+                viewport={{ once: true }}
+                initial={{ opacity: 0, x: -60 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ damping: 150, stiffness: 500, type: 'spring' }}
                 className={style.redS}
                 src="images/proyects/redsqueareSSS.png"
                 alt=""
               />
             </Link>
           </div>
-          <div className={style.circleInfo}>
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{ damping: 150, stiffness: 500, type: 'spring' }}
+            className={style.circleInfo}
+          >
             <div className={style.solapa}>
               <ul>
                 <li>
@@ -116,17 +173,35 @@ export const Proyects = () => {
                 </p>
               </div>
             </Link>
-          </div>
+          </motion.div>
         </div>
         <div className={style.containerCard}>
           <Link href="https://starbucks-clon.vercel.app/" passHref>
-            <div className={style.circle}>
+            <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ damping: 150, stiffness: 500, type: 'spring' }}
+              className={style.circle}
+            >
               <img src="images/proyects/starb.png" alt="" />
               <img src="images/proyects/Starbucksmobile.png" alt="" />
-            </div>
+            </motion.div>
           </Link>
 
-          <div className={style.circleInfo}>
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{ damping: 150, stiffness: 500, type: 'spring' }}
+            className={style.circleInfo}
+          >
             <div className={style.solapa}>
               <ul>
                 <li>
@@ -147,7 +222,7 @@ export const Proyects = () => {
                 <p>Practica personal. Utilizando HTML, CSS y Javascript</p>
               </div>
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

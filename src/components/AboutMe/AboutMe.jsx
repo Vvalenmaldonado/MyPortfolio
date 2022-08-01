@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import style from './AboutMe.module.css';
@@ -11,17 +12,35 @@ export const AboutMe = () => {
         className={`${style.wrapperContainer} ${style.wrapperContainerMargin}`}
       >
         <article className={style.article}>
-          <div className={style.containerImageW}>
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{ duration: 1 }}
+            className={style.containerImageW}
+          >
             <div className={style.borderG}>
               <div className={style.border}>
                 <img src="images/aboutme/yop.png" alt="" />
               </div>
             </div>
-          </div>
+          </motion.div>
 
           <div className={style.description}>
             <h2>Who I am?</h2>
-            <div className={style.boxOpacity}>
+            <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ duration: 1 }}
+              className={style.boxOpacity}
+            >
               <p>
                 Soy una desarrolladora web que esta en una constante búsqueda de
                 aprender y desarrollarme profesionalmente en software,
@@ -40,7 +59,7 @@ export const AboutMe = () => {
                 todas las herramientas que se requieran para brindar una
                 solución acorde a lo que se necesite.
               </p>
-            </div>
+            </motion.div>
             <div className={style.whatILike}>
               <img
                 src="images/aboutme/heart.png"

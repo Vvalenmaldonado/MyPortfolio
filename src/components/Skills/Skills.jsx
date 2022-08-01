@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
+import { motion } from 'framer-motion';
 import React from 'react';
 
 import style from './Skills.module.css';
-
 export const Skills = () => {
   return (
     <section className={style.skill}>
@@ -28,7 +28,16 @@ export const Skills = () => {
               </p>
             </div>
           </div>
-          <div className={style.boxIcon}>
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            transition={{ damping: 150, stiffness: 500, type: 'spring' }}
+            className={style.boxIcon}
+          >
             <h3>Technologies</h3>
             <ul>
               <li>
@@ -75,9 +84,18 @@ export const Skills = () => {
                 <span>In process..</span>
               </li>
             </ul>
-          </div>
+          </motion.div>
         </div>
-        <div className={`${style.boxIcon} ${style.boxIconTools}`}>
+        <motion.div
+          viewport={{ once: true }}
+          initial={{ opacity: 0, x: -60 }}
+          whileInView={{
+            opacity: 1,
+            x: 0,
+          }}
+          transition={{ damping: 150, stiffness: 500, type: 'spring' }}
+          className={`${style.boxIcon} ${style.boxIconTools}`}
+        >
           <h3>Tools</h3>
           <ul>
             <li>
@@ -115,7 +133,7 @@ export const Skills = () => {
               <span>In process..</span>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
