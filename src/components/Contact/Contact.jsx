@@ -23,7 +23,14 @@ export const Contact = () => {
       <section className={style.contact}>
         <div className={style.talk}>
           <h1>Contact</h1>
-          <div className={style.imgsT}>
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0 }}
+            whileInView={{
+              opacity: 1,
+            }}
+            className={style.imgsT}
+          >
             <motion.img
               animate={{ y: 50 }}
               transition={{
@@ -57,10 +64,31 @@ export const Contact = () => {
               alt="h"
             />
             <div className={style.containerLT}>
-              <span>Let's </span>
-              <span className={style.talkText}>Talk</span>
+              <motion.span
+                viewport={{ once: true }}
+                initial={{ opacity: 0, x: -60 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ delay: 0.5 }}
+              >
+                Let's
+              </motion.span>
+              <motion.span
+                viewport={{ once: true }}
+                initial={{ opacity: 0, x: 60 }}
+                whileInView={{
+                  opacity: 1,
+                  x: 0,
+                }}
+                transition={{ delay: 0.5 }}
+                className={style.talkText}
+              >
+                Talk
+              </motion.span>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         <form className={style.inputs} onSubmit={sendEmail}>
