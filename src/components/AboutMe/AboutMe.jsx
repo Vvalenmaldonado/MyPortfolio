@@ -12,7 +12,7 @@ export const AboutMe = () => {
 
   useEffect(() => {
     setInterval(() => {
-      setThingsIndex((index) => (index >= 0 && index < 2 ? index + 1 : 0));
+      setThingsIndex((index) => (index >= 0 && index < 3 ? index + 1 : 0));
     }, 2000);
   }, []);
 
