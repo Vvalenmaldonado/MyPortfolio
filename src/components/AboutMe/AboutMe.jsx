@@ -12,10 +12,8 @@ export const AboutMe = () => {
 
   useEffect(() => {
     setInterval(() => {
-      setThingsIndex((index) =>
-        index >= 0 && index <= 3 ? index + 0.5 : (index = 0)
-      );
-    }, 5000);
+      setThingsIndex((index) => (index >= 0 && index < 2 ? index + 1 : 0));
+    }, 2000);
   }, []);
 
   return (
@@ -82,9 +80,8 @@ export const AboutMe = () => {
               />
               <h2>What i like?</h2>
             </div>
-            <AnimatePresence>
-              <ul>{things[thingsIndex]}</ul>
-            </AnimatePresence>
+
+            <span>{things[thingsIndex]}</span>
           </div>
         </article>
       </div>
