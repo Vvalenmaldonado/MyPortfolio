@@ -88,6 +88,13 @@
     margin-right: 1rem;
 }
 
+.slideShowContainer{
+    width: max-content;
+    height: 2rem;
+    background-color: red;
+    overflow: hidden;
+}
+
 @media  (max-width: 700px) {
   
   .article{

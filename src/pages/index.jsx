@@ -16,14 +16,27 @@ const HomePage = () => {
 
       <div className="wrapperHero">
         <HeroB />
+
         <Header />
-        <Title />
+        <a id="Home" name="Home">
+          <Title />
+        </a>
       </div>
 
-      <AboutMe />
-      <Skills />
-      {/* <Proyects /> */}
-      <Contact />
+      <a id="AboutMe" name="AboutMe" passHref>
+        <AboutMe />
+      </a>
+      <a id="Skills" name="Skills">
+        <Skills />
+      </a>
+
+      <Proyects />
+      <a id="Proyects" name="Proyects" passHref>
+        {''}
+      </a>
+      <a id="Contact" name="Contact">
+        <Contact />
+      </a>
     </div>
   );
 };

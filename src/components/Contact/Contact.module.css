@@ -10,12 +10,23 @@
      padding-top:  clamp(1rem, 0.2174rem + 4.1739vw, 4rem);
      padding-bottom: clamp(1rem, 0.2174rem + 4.1739vw, 4rem);
 }
+
 .talk{
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.talk h2{
+  
+    font-size: 3.7rem;
+
+    margin-left: 3%;
+    position: relative;
+   bottom: 11vh;
+    letter-spacing: 8px;
+
 }
 .containerLT{
     position: absolute;
@@ -80,7 +91,9 @@ justify-content: center;
 .contactIcons{
     height: max-content;
     width: max-content;
-    background: rgba(182, 182, 182, 0.295);
+    background: var(--background-container);
+    border-bottom: 1px solid #6c3caf;
+    border-top: 1px solid black;
     border-radius: 2px 2px 20px 20px;
    max-width: max-content;
    margin-left: auto;
@@ -108,14 +121,7 @@ justify-content: center;
     width: 50%;
     padding-bottom: 3rem;
 }
-.inputs h1{
-    position: relative;
-    top: 15px;
-   
-    letter-spacing: 8px;
-    font-size: 60px;
-    margin-bottom: 110px;
-}
+
 .containerSend{
     display: flex;
     align-items: center;

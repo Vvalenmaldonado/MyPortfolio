@@ -28,11 +28,19 @@ export const Header = ({data}) => {
     <header className={styles.containerHeader} >
       <nav>
       <ul>
-        <li>HOME</li>
-        <li>ABOUT</li>
-        <li>SKILLS</li>
-        <li>PROYECTS</li>
-        <li>CONTACT ME</li>
+    
+        <li>  <a href='#Home' passHref>HOME</a></li>
+      
+        <li>  <a href='#AboutMe' passHref>ABOUT </a> </li>
+      
+        <li>  <a href='#Skills' passHref>SKILLS </a></li>
+       
+     
+        <li><a href='#Proyects' passHref>PROYECTS</a></li>
+        
+       
+        <li> <a href='#Contact' passHref>CONTACT ME   </a></li>
+     
 
       </ul>
  

@@ -1,10 +1,18 @@
 /* eslint-disable @next/next/no-img-element */
-import { motion } from 'framer-motion';
-import React from 'react';
+
+import { AnimatePresence, motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 
 import style from './AboutMe.module.css';
 
 export const AboutMe = () => {
+  // const [seconds, setSeconds] = useState([
+  //   'GYM',
+  //   'VIDEOGAMES',
+  //   'DESING',
+  //   'ANIMATIONS',
+  // ]);
+
   return (
     <section className={style.aboutMe}>
       <h1>About me</h1>
@@ -69,6 +77,23 @@ export const AboutMe = () => {
               />
               <h2>What i like?</h2>
             </div>
+            {/* <AnimatePresence>
+              <ul>
+                <motion.li>
+                  {seconds.map((e, i) => (
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+                      exit={{ opacity: 1 }}
+                      style={{ fontSize: 100 }}
+                      key={i}
+                    >
+                      {e}
+                    </motion.p>
+                  ))}
+                </motion.li>
+              </ul>
+            </AnimatePresence> */}
           </div>
         </article>
       </div>
