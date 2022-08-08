@@ -6,12 +6,17 @@ import React, { useEffect, useState } from 'react';
 import style from './AboutMe.module.css';
 
 export const AboutMe = () => {
-  // const [seconds, setSeconds] = useState([
-  //   'GYM',
-  //   'VIDEOGAMES',
-  //   'DESING',
-  //   'ANIMATIONS',
-  // ]);
+  const things = ['GYM', 'VIDEOGAMES', 'DESING', 'ANIMATIONS'];
+
+  const [thingsIndex, setThingsIndex] = useState(0);
+
+  useEffect(() => {
+    setInterval(() => {
+      setThingsIndex((index) =>
+        index >= 0 && index <= 3 ? index + 0.5 : (index = 0)
+      );
+    }, 5000);
+  }, []);
 
   return (
     <section className={style.aboutMe}>
@@ -77,23 +82,9 @@ export const AboutMe = () => {
               />
               <h2>What i like?</h2>
             </div>
-            {/* <AnimatePresence>
-              <ul>
-                <motion.li>
-                  {seconds.map((e, i) => (
-                    <motion.p
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1, transition: { duration: 0.5 } }}
-                      exit={{ opacity: 1 }}
-                      style={{ fontSize: 100 }}
-                      key={i}
-                    >
-                      {e}
-                    </motion.p>
-                  ))}
-                </motion.li>
-              </ul>
-            </AnimatePresence> */}
+            <AnimatePresence>
+              <ul>{things[thingsIndex]}</ul>
+            </AnimatePresence>
           </div>
         </article>
       </div>

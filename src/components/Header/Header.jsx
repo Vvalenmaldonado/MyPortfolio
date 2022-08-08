@@ -28,28 +28,17 @@ export const Header = ({data}) => {
     <header className={styles.containerHeader} >
       <nav>
       <ul>
-    
         <li>  <a href='#Home' passHref>HOME</a></li>
-      
         <li>  <a href='#AboutMe' passHref>ABOUT </a> </li>
-      
         <li>  <a href='#Skills' passHref>SKILLS </a></li>
-       
-     
         <li><a href='#Proyects' passHref>PROYECTS</a></li>
-        
-       
         <li> <a href='#Contact' passHref>CONTACT ME   </a></li>
-     
-
       </ul>
  
         <div className={`${styles.navMobile} ${styles.displayNone}`}>
           <NavBurger clicked={clicked} handleClick={handleClick} />
           {clicked ? <ContentNavBurger className={styles.displayNone} handleClick={handleClick} /> : null}
-    
-         
-         
+  
         </div>
       </nav>
      
