@@ -21,8 +21,9 @@
     align-items: center;   
 }
 .text{
-    text-align: end;
+    text-align: start;
     margin-bottom: 20px;
+    line-height: 2rem;
 }
 .skillText{
     font-size: clamp(1rem, 0.58rem + 0.96vw, 1.3rem);

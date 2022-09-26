@@ -13,7 +13,7 @@ export const AboutMe = () => {
   useEffect(() => {
     setInterval(() => {
       setThingsIndex((index) => (index >= 0 && index < 3 ? index + 1 : 0));
-    }, 2000);
+    }, 3000);
   }, []);
 
   return (
@@ -81,7 +81,16 @@ export const AboutMe = () => {
               <h2>What i like?</h2>
             </div>
 
-            <span>{things[thingsIndex]}</span>
+            <motion.span
+              viewport={{ once: true }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+            >
+              {things[thingsIndex]}
+            </motion.span>
           </div>
         </article>
       </div>
