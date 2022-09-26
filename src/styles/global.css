@@ -14,7 +14,7 @@
     --color-body: rgb(245, 245, 245);
    
     --margin-top-section: 10rem;
-    --background-container:rgba(163, 162, 162, 0.096);
+    --background-container:rgb(102 102 102 / 10%);;
  
   }
 
@@ -86,25 +86,26 @@
 {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
 	border-radius: 1px;
-	background-color: var(--color-black);
+	background-color: #00000063;
 }
 
 ::-webkit-scrollbar
 {
-	width: 12px;
-	background-color: #F5F5F5;
+	width: 10px;
+	background-color: #00000063;
 }
 
 ::-webkit-scrollbar-thumb
 {
 	border-radius: 2px;
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
-	background: rgb(85, 85, 85)
+
+    background: #6c3caf;
 }
 ::-webkit-scrollbar-thumb:active
 {
 	border-radius: 2px;
 	-webkit-box-shadow: inset 0 0 6px rgba(233, 20, 20, 0.2);
-	background: rgba(226,113,29,1);
+	background: #231681;
 }
 

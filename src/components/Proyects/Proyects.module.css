@@ -41,8 +41,11 @@
     padding: .5rem;
     object-fit: cover;
 }
-.circle img:last-child:not(.redS){
-    width: 8rem;
+.circle img:last-child{
+    width: 20%;
+}
+.hidden {
+    visibility: hidden;
 }
 .circleInfo{
     display: flex;
@@ -58,6 +61,19 @@
     background-color: var(--background-container);
     border-radius: 10px 10px 0px 0px;
 }
+/*Animation hover */
+.circleInfo:hover  .CircleText{
+border-bottom: 1px solid #6c3caf;
+border-left: 1px solid #6c3caf;
+border-right: 1px solid #6c3caf;
+
+  }
+  .circleInfo:hover  .solapa{
+    border-top: 1px solid #6c3caf;
+      }
+
+
+/*Fin de animation hover*/
 .solapa ul{
     list-style:none;
     display: flex;

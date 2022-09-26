@@ -12,22 +12,25 @@ export const Proyects = () => {
       <div className={style.wrapper}>
         <h1>Proyects</h1>
         <div className={style.containerCard}>
-          <motion.div
-            viewport={{ once: true }}
-            initial={{ opacity: 0, x: -60 }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            className={style.circle}
-          >
-            <a href="http://www.lavozdemonte.com" passHref>
-              <img src="images/proyects/lavozdemontepngg.png" alt="" />
-            </a>
-            <a href="http://www.lavozdemonte.com" passHref>
+          <Link href="http://www.lavozdemonte.com" passHref>
+            <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              className={style.circle}
+            >
+              <img
+                classname={style.Computerimg}
+                src="images/proyects/lavozdemontepngg.png"
+                alt=""
+              />
+
               <img src="images/proyects/lavozdemontemobile.png" alt="" />
-            </a>
-          </motion.div>
+            </motion.div>
+          </Link>
 
           <motion.div
             viewport={{ once: true }}
@@ -76,7 +79,11 @@ export const Proyects = () => {
               }}
               className={style.circle}
             >
-              <img src="images/proyects/abletonN.png" alt="" />
+              <img
+                className={style.Computerimg}
+                src="images/proyects/abletonN.png"
+                alt=""
+              />
               <img src="images/proyects/AbletonMobilee.png" alt="" />
             </motion.div>
           </Link>
@@ -122,7 +129,11 @@ export const Proyects = () => {
               }}
               className={style.circle}
             >
-              <img src="images/proyects/starb.png" alt="" />
+              <img
+                className={style.Computerimg}
+                src="images/proyects/starb.png"
+                alt=""
+              />
               <img src="images/proyects/Starbucksmobile.png" alt="" />
             </motion.div>
           </Link>
@@ -159,22 +170,79 @@ export const Proyects = () => {
           </motion.div>
         </div>
         <div className={style.containerCard}>
-          <div className={style.circle}>
-            <Link
-              href="https://red-square-clon-bg4vz9cvf-vvalenmaldonado.vercel.app/"
-              passHref
+          <Link href="https://ableton-frontend-practice.vercel.app/" passHref>
+            <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              className={style.circle}
             >
-              <motion.img
+              <img
+                className={style.Computerimg}
+                src="images/proyects/redsqueareSSS.png"
+                alt=""
+              />
+              <img
+                className={style.hidden}
+                src="images/proyects/Starbucksmobile.png"
+                alt=""
+              />
+            </motion.div>
+          </Link>
+
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            className={style.circleInfo}
+          >
+            <div className={style.solapa}>
+              <ul>
+                <li>
+                  <img src="images/Skills/html.png" alt="html" />
+                </li>
+                <li>
+                  <img src="images/Skills/css.png" alt="css" />
+                </li>
+                <li>
+                  <img src="images/Skills/javascript.png" alt="Javascript" />
+                </li>
+              </ul>
+            </div>
+            <Link href="https://starbucks-clon.vercel.app/" passHref>
+              <div className={style.CircleText}>
+                <h3>Red Square | copy</h3>
+
+                <p>Practica personal. Utilizando HTML, CSS y Javascript</p>
+              </div>
+            </Link>
+          </motion.div>
+        </div>
+        {/* <div className={style.containerCard}>
+          <div className={style.circle}>
+            <Link href="https://ableton-frontend-practice.vercel.app/" passHref>
+              <motion.div
                 viewport={{ once: true }}
                 initial={{ opacity: 0, x: -60 }}
                 whileInView={{
                   opacity: 1,
                   x: 0,
                 }}
-                className={style.redS}
-                src="images/proyects/redsqueareSSS.png"
-                alt=""
-              />
+                className={style.circle}
+              >
+                <img
+                  className={style.Computerimg}
+                  src="images/proyects/redsqueareSSS.png"
+                  alt=""
+                />
+                <img src="images/proyects/AbletonMobilee.png" alt="" />
+              </motion.div>
             </Link>
           </div>
           <motion.div
@@ -209,7 +277,7 @@ export const Proyects = () => {
               </div>
             </Link>
           </motion.div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
