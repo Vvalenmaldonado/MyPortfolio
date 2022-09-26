@@ -81,16 +81,7 @@ export const AboutMe = () => {
               <h2>What i like?</h2>
             </div>
 
-            <motion.span
-              viewport={{ once: true }}
-              initial={{ opacity: 0, x: -60 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-              }}
-            >
-              {things[thingsIndex]}
-            </motion.span>
+            <span>{things[thingsIndex]}</span>
           </div>
         </article>
       </div>
