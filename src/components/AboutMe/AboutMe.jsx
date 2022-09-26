@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react';
 import style from './AboutMe.module.css';
 
 export const AboutMe = () => {
-  const things = ['GYM', 'VIDEOGAMES', 'DESING', 'ANIMATIONS'];
+  const things = ['GYM', 'VIDEOGAMES', 'DESING', 'ANIMATIONS', 'ANIME'];
 
   const [thingsIndex, setThingsIndex] = useState(0);
 
