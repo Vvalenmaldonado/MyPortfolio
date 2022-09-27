@@ -1,4 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
+import { Loop } from '@mui/icons-material';
 import { motion } from 'framer-motion';
 import React from 'react';
 
@@ -80,7 +81,16 @@ export const Skills = () => {
               </li>
 
               <li>
-                <img src="images/Skills/gearloading_87549.png" alt="process" />
+                <motion.img
+                  animate={{ rotate: 360 }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    repeatType: 'loop',
+                  }}
+                  src="images/Skills/gearloading_87549.png"
+                  alt="process"
+                />
                 <span>In process..</span>
               </li>
             </ul>
@@ -129,7 +139,16 @@ export const Skills = () => {
               <span>CMS</span>
             </li>
             <li>
-              <img src="images/Skills/gearloading_87549.png" alt="process" />
+              <motion.img
+                animate={{ rotate: 360 }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  repeatType: 'loop',
+                }}
+                src="images/Skills/gearloading_87549.png"
+                alt="process"
+              />
               <span>In process..</span>
             </li>
           </ul>
