@@ -225,60 +225,6 @@ export const Proyects = () => {
             </Link>
           </motion.div>
         </div>
-        {/* <div className={style.containerCard}>
-          <div className={style.circle}>
-            <Link href="https://ableton-frontend-practice.vercel.app/" passHref>
-              <motion.div
-                viewport={{ once: true }}
-                initial={{ opacity: 0, x: -60 }}
-                whileInView={{
-                  opacity: 1,
-                  x: 0,
-                }}
-                className={style.circle}
-              >
-                <img
-                  className={style.Computerimg}
-                  src="images/proyects/redsqueareSSS.png"
-                  alt=""
-                />
-                <img src="images/proyects/AbletonMobilee.png" alt="" />
-              </motion.div>
-            </Link>
-          </div>
-          <motion.div
-            viewport={{ once: true }}
-            initial={{ opacity: 0, x: 60 }}
-            whileInView={{
-              opacity: 1,
-              x: 0,
-            }}
-            className={style.circleInfo}
-          >
-            <div className={style.solapa}>
-              <ul>
-                <li>
-                  <img src="images/Skills/html.png" alt="html" />
-                </li>
-                <li>
-                  <img src="images/Skills/css.png" alt="css" />
-                </li>
-                <li>
-                  <img src="images/Skills/javascript.png" alt="Javascript" />
-                </li>
-              </ul>
-            </div>
-            <Link
-              href="https://red-square-clon-bg4vz9cvf-vvalenmaldonado.vercel.app/"
-              passHref
-            >
-              <div className={style.CircleText}>
-                <h3>Red Square | copy</h3>
-                <p>Practica personal. Utilizando HTML, CSS y Javascript</p>
-              </div>
-            </Link>
-          </motion.div>
-        </div> */}
       </div>
     </section>
   );

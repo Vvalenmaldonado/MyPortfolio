@@ -33,7 +33,7 @@
     -webkit-font-smoothing: antialiased;
     font-family: 'Inter', sans-serif;
     color: white;
-
+    overflow-x: hidden;
   }
 
   img, picture, video, canvas, svg {

@@ -21,7 +21,7 @@ export const Contact = () => {
   return (
     <div>
       <section className={style.contact}>
-        <div className={style.talk}>
+        {/* <div className={style.talk}>
           <h2>Contact</h2>
           <motion.div
             viewport={{ once: true }}
@@ -89,7 +89,7 @@ export const Contact = () => {
               </motion.span>
             </div>
           </motion.div>
-        </div>
+        </div> */}
 
         <form className={style.inputs} onSubmit={sendEmail}>
           <div className={style.containerSend}>
@@ -169,7 +169,7 @@ export const Contact = () => {
           />
           <motion.button
             viewport={{ once: true }}
-            initial={{ opacity: 0, y: -60 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{
               opacity: 1,
               y: 0,

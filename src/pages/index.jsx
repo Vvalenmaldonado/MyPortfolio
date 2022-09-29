@@ -24,13 +24,13 @@ const HomePage = () => {
       </div>
 
       <a id="AboutMe" name="AboutMe" passHref>
-        <AboutMe />
+        {/* <AboutMe /> */}
       </a>
       <a id="Skills" name="Skills">
-        <Skills />
+        {/* <Skills /> */}
       </a>
       <a id="Proyects" name="Proyects">
-        <Proyects />
+        {/* <Proyects /> */}
       </a>
       <a id="Contact" name="Contact">
         <Contact />
