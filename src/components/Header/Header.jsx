@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import React, { useEffect,useState  } from 'react';
 
@@ -28,11 +28,40 @@ export const Header = ({data}) => {
     <header className={styles.containerHeader} >
       <nav>
       <ul>
-        <li>  <a href='#Home' passHref>HOME</a></li>
-        <li>  <a href='#AboutMe' passHref>ABOUT </a> </li>
-        <li>  <a href='#Skills' passHref>SKILLS </a></li>
-        <li><a href='#Proyects' passHref>PROYECTS</a></li>
-        <li> <a href='#Contact' passHref>CONTACT ME   </a></li>
+        <li>  <motion.a    viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }} href='#Home' passHref>HOME</motion.a></li>
+        <li>  <motion.a  viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            transition={{ delay: 0.5 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }} href='#AboutMe' passHref>ABOUT </motion.a> </li>
+        <li>  <motion.a viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            transition={{ delay: 1}}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}href='#Skills' passHref>SKILLS </motion.a></li>
+        <li>  <motion.a viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            transition={{ delay: 1.5 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }} href='#Proyects' passHref>PROYECTS</motion.a></li>
+        <li>  <motion.a viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            transition={{ delay: 2 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }} href='#Contact' passHref>CONTACT ME   </motion.a></li>
       </ul>
  
         <div className={`${styles.navMobile} ${styles.displayNone}`}>
