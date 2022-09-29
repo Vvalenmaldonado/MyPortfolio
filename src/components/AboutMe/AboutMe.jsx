@@ -1,19 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 import style from './AboutMe.module.css';
 
 export const AboutMe = () => {
   const things = ['GYM', 'VIDEOGAMES', 'DESING', 'ANIMATIONS', 'ANIME'];
+  const intervalRef = useRef(null);
 
   const [thingsIndex, setThingsIndex] = useState(0);
 
   useEffect(() => {
-    setInterval(() => {
-      setThingsIndex((index) => (index >= 0 && index < 3 ? index + 1 : 0));
-    }, 3000);
+    if (intervalRef.current === null) {
+      intervalRef = setInterval(() => {
+        setThingsIndex((index) => (index >= 0 && index < 3 ? index + 1 : 0));
+      }, 2500);
+    }
+
+    return () => {
+      clearInterval(intervalRef.current);
+    };
   }, []);
 
   return (
@@ -30,7 +37,7 @@ export const AboutMe = () => {
               opacity: 1,
               x: 0,
             }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.5 }}
             className={style.containerImageW}
           >
             <div className={style.borderG}>
@@ -49,7 +56,7 @@ export const AboutMe = () => {
                 opacity: 1,
                 x: 0,
               }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
               className={style.boxOpacity}
             >
               <p>

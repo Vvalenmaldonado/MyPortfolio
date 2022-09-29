@@ -25,3 +25,44 @@
   text-decoration: none;
   color: white;
 }
+/*Animation*/
+
+.navList li a {
+  background-image: linear-gradient(
+    to right,
+    white 50%,
+    white 0%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+ 
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.navList li a:before{
+  content: '';
+    
+    background: linear-gradient(9deg, #231681 30%,#6c3caf 70%);
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+.navList li a:hover {
+ background-position: 0;
+ 
+}
+.navList li a:hover::before{
+  width: 100%;
+}
+.navList li:nth-child(even){
+  padding: 0 1.5rem ;}
+
