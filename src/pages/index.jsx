@@ -29,10 +29,8 @@ const HomePage = () => {
       <a id="Skills" name="Skills">
         <Skills />
       </a>
-
-      <Proyects />
-      <a id="Proyects" name="Proyects" passHref>
-        {''}
+      <a id="Proyects" name="Proyects">
+        <Proyects />
       </a>
       <a id="Contact" name="Contact">
         <Contact />
