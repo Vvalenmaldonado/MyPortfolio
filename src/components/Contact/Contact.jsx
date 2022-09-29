@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default-member */
 /* eslint-disable @next/next/no-img-element */
 import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
@@ -98,8 +99,8 @@ export const Contact = () => {
           </div>
 
           <motion.label
-            viewport={{ once: true }}
-            initial={{ opacity: 0, y: 20 }}
+            viewport={{ amount: 0.8, once: true }}
+            initial={{ opacity: 0, y: 5 }}
             whileInView={{
               opacity: 1,
               y: 0,
@@ -108,8 +109,8 @@ export const Contact = () => {
             Full name
           </motion.label>
           <motion.input
-            viewport={{ once: true }}
-            initial={{ opacity: 0, y: 20 }}
+            viewport={{ amount: 0.8, once: true }}
+            initial={{ opacity: 0, y: 5 }}
             whileInView={{
               opacity: 1,
               y: 0,
@@ -119,8 +120,8 @@ export const Contact = () => {
             name="name"
           />
           <motion.label
-            viewport={{ once: true }}
-            initial={{ opacity: 0, y: 20 }}
+            viewport={{ amount: 0.8, once: true }}
+            initial={{ opacity: 0, y: 5 }}
             whileInView={{
               opacity: 1,
               y: 0,
@@ -130,8 +131,8 @@ export const Contact = () => {
             Email
           </motion.label>
           <motion.input
-            viewport={{ once: true }}
-            initial={{ opacity: 0, y: 20 }}
+            viewport={{ amount: 0.8, once: true }}
+            initial={{ opacity: 0, y: 5 }}
             whileInView={{
               opacity: 1,
               y: 0,
@@ -143,8 +144,8 @@ export const Contact = () => {
           />
 
           <motion.label
-            viewport={{ once: true }}
-            initial={{ opacity: 0, y: 20 }}
+            viewport={{ amount: 0.8, once: true }}
+            initial={{ opacity: 0, y: 5 }}
             whileInView={{
               opacity: 1,
               y: 0,
@@ -154,8 +155,8 @@ export const Contact = () => {
             Message
           </motion.label>
           <motion.input
-            viewport={{ once: true }}
-            initial={{ opacity: 0, y: 20 }}
+            viewport={{ amount: 0.8, once: true }}
+            initial={{ opacity: 0, y: 5 }}
             whileInView={{
               opacity: 1,
               y: 0,
@@ -168,8 +169,8 @@ export const Contact = () => {
             style={{ height: '114px' }}
           />
           <motion.button
-            viewport={{ once: true }}
-            initial={{ opacity: 0, y: 20 }}
+            viewport={{ amount: 0.8, once: true }}
+            initial={{ opacity: 0, y: 5 }}
             whileInView={{
               opacity: 1,
               y: 0,
