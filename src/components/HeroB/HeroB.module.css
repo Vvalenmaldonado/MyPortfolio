@@ -28,9 +28,8 @@
     animation: move;
     animation-duration: 1;
     animation-timing-function: ease-in-out;
- 
     animation-iteration-count: infinite;
-   filter: blur(150px);
+   /* filter: blur(80px); */
 }
 
 
