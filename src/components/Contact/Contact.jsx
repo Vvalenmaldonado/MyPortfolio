@@ -2,22 +2,67 @@
 /* eslint-disable @next/next/no-img-element */
 import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import style from './Contact.module.css';
 
 export const Contact = () => {
+  /*Form validation */
+  const initialValues = { fullName: '', message: '', userEmail: '' };
+  const [formValues, setFormValues] = useState(initialValues);
+  const [formErrors, setFormErrors] = useState({});
+
+  const [isSubmit, setIsSubmit] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({ ...formValues, [name]: value });
+  };
+
+  /*Form validation 2 */
+  useEffect(() => {
+    console.log(formErrors);
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      console.log(formValues);
+    }
+  }, [formErrors]);
+
+  const validate = (values) => {
+    const errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    if (!values.fullName) {
+      errors.fullName = 'Full name is required';
+    }
+    if (!values.userEmail) {
+      errors.userEmail = 'Email is required';
+    } else if (!regex.test(values.userEmail)) {
+      errors.userEmail = 'This is not a valid email format!';
+    }
+    if (!values.message) {
+      errors.message = 'Message is required';
+    } else if (values.message > 200) {
+      errors.message = 'Message cannot exceed more than 200 characters';
+    }
+    return errors;
+  };
+
+  /*send email form */
   function sendEmail(e) {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        'service_l8y7bmk',
-        'template_baf0n8v',
-        e.target,
-        'tyfdjcsH2ExI7pkBi'
-      )
-      .then((res) => console.log(res))
-      .catch((err) => console.log(err));
+
+    setFormErrors(validate(formValues));
+    setIsSubmit(true);
+    if (Object.keys(formErrors).length == 0 && isSubmit) {
+      emailjs
+        .sendForm(
+          'service_l8y7bmk',
+          'template_baf0n8v',
+          e.target,
+          'tyfdjcsH2ExI7pkBi'
+        )
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
+    }
   }
   return (
     <div>
@@ -117,8 +162,12 @@ export const Contact = () => {
             }}
             type="text"
             placeholder="Full name"
-            name="name"
+            name="fullName"
+            value={formValues.fullName}
+            onChange={handleChange}
           />
+          <span>{formErrors.fullName}</span>
+
           <motion.label
             viewport={{ amount: 0.8, once: true }}
             initial={{ opacity: 0, y: 5 }}
@@ -140,8 +189,11 @@ export const Contact = () => {
             transition={{ delay: 0.2 }}
             type="text"
             placeholder="Ej: name.lastname@gmail.com"
-            name="user-email"
+            name="userEmail"
+            value={formValues.userEmail}
+            onChange={handleChange}
           />
+          <span>{formErrors.userEmail}</span>
 
           <motion.label
             viewport={{ amount: 0.8, once: true }}
@@ -163,11 +215,13 @@ export const Contact = () => {
             }}
             transition={{ delay: 0.4 }}
             name="message"
-            class="message"
             type="text"
             placeholder="What do you need?"
             style={{ height: '114px' }}
+            value={formValues.message}
+            onChange={handleChange}
           />
+          <span>{formErrors.message}</span>
           <motion.button
             viewport={{ amount: 0.8, once: true }}
             initial={{ opacity: 0, y: 5 }}
@@ -181,6 +235,11 @@ export const Contact = () => {
           >
             <span>SEND</span>
           </motion.button>
+          {Object.keys(formErrors).length === 0 && isSubmit ? (
+            <span className={style.sendSucceful}>Enviado!</span>
+          ) : (
+            ''
+          )}
         </form>
       </section>
       <div className={style.iconss}>
