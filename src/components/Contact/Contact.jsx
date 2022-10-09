@@ -51,9 +51,9 @@ export const Contact = () => {
     e.preventDefault();
 
     setFormErrors(validate(formValues));
-    setIsSubmit(true);
-    if (Object.keys(formErrors).length == 0 && isSubmit) {
-      emailjs
+    console.log(formErrors, 'HOLA');
+    if (Object.keys(formErrors).length === 0 && isSubmit) {
+      const emailJS = emailjs
         .sendForm(
           'service_l8y7bmk',
           'template_baf0n8v',
@@ -62,7 +62,9 @@ export const Contact = () => {
         )
         .then((res) => console.log(res))
         .catch((err) => console.log(err));
+      return emailJS;
     }
+    setIsSubmit(true);
   }
   return (
     <div>
