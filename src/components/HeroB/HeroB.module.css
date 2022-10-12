@@ -29,7 +29,7 @@
     animation-duration: 1;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-   filter: blur(40px);
+   filter: blur(35px);
    transform: translateZ(0px);
 }
 
