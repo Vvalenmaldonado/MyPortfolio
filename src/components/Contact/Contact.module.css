@@ -52,7 +52,7 @@ justify-content: center;
 }
 .second{
     position: relative;
-    left:  clamp(11rem, 2.5rem + 16vw, 17rem);
+    left:  clamp(2rem, 2.5rem + 16vw, 17rem);
     bottom: 3rem;
 }
 .imgsT img:last-child{
@@ -61,12 +61,12 @@ justify-content: center;
     right: 9rem;
 }
 .containerLT .talkText{
-    font-size: clamp(6rem, 5.2174rem + 4.1739vw, 9rem);
-    margin-left: clamp(4rem, 2.1739rem + 9.7391vw, 11rem);
+    font-size: clamp(5rem, 5.2174rem + 4.1739vw, 9rem);
+    margin-left: clamp(3rem, 2.1739rem + 9.7391vw, 11rem);
     width: fit-content;
 }
 .containerLT span:first-child{
-    font-size: clamp(6rem, 3.1667rem + 5.3333vw, 8rem);
+    font-size: clamp(5rem, 3.1667rem + 5.3333vw, 8rem);
     position: relative;
     left:  clamp(0rem, 6.0417rem + -6.6667vw, 2.5rem);
     width: fit-content;
@@ -84,7 +84,8 @@ justify-content: center;
 .findMe{
     width: max-content;
     margin: 0 auto;
-    font-size: 19px;
+    font-size: clamp(1rem, 0.8rem + 0.8vw, 1.2rem);
+    margin-bottom: 0.5px;
     letter-spacing: 1px;
     font-weight:lighter;  
 }
@@ -145,7 +146,7 @@ justify-content: center;
 }
 .inputs input{
     height: 50px;
-    width: 65%;
+    width: 100%;
  
     margin: 10px 0px 35px 0px;
     border-radius: 9px;
@@ -167,18 +168,46 @@ justify-content: center;
     border: 0px;
     color: white;
 }
+
+.containerForm{
+
+width: 70%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.containerForm label{
+    align-self: center;
+}
+.containerLabel{
+    display: flex;
+    flex-direction: row;
+}
+.containerLabel span{
+    color: red;
+    position: relative;
+    left: 5px;
+}
 @media  (max-width: 850px) {
-  
     .contact{
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
    .inputs{
     width: 100%;
    }
-   .contact .inputs h3{
- 
-   }
+   .containerForm label{
+    align-self: flex-start;
+}
+.containerForm{
+    width: 100%;
+    padding: 1rem ;
+}
+.containerSend{
+    margin-top: 2rem;
+}
+.contactIcons ul li img{
+ height: 30px;
+}
     
   }
 

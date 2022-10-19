@@ -31,15 +31,15 @@ export const Contact = () => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!values.fullName) {
-      errors.fullName = 'Full name is required';
+      errors.fullName = ' - is required';
     }
     if (!values.userEmail) {
-      errors.userEmail = 'Email is required';
+      errors.userEmail = ' - is required';
     } else if (!regex.test(values.userEmail)) {
       errors.userEmail = 'This is not a valid email format!';
     }
     if (!values.message) {
-      errors.message = 'Message is required';
+      errors.message = ' - is required';
     } else if (values.message > 200) {
       errors.message = 'Message cannot exceed more than 200 characters';
     }
@@ -144,104 +144,110 @@ export const Contact = () => {
             <h3>Send me your message</h3>
             <img src="images/contact/correo-electronico.png" alt="correo" />
           </div>
+          <div className={style.containerForm}>
+            <div className={style.containerLabel}>
+              <motion.label
+                viewport={{ amount: 0.8, once: true }}
+                initial={{ opacity: 0, y: 5 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+              >
+                Full name
+              </motion.label>
+              <span>{formErrors.fullName}</span>
+            </div>
+            <motion.input
+              viewport={{ amount: 0.8, once: true }}
+              initial={{ opacity: 0, y: 5 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              type="text"
+              placeholder="Full name"
+              name="fullName"
+              value={formValues.fullName}
+              onChange={handleChange}
+            />
+            <div className={style.containerLabel}>
+              <motion.label
+                viewport={{ amount: 0.8, once: true }}
+                initial={{ opacity: 0, y: 5 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{ delay: 0.2 }}
+              >
+                Email
+              </motion.label>
+              <span>{formErrors.userEmail}</span>
+            </div>
+            <motion.input
+              viewport={{ amount: 0.8, once: true }}
+              initial={{ opacity: 0, y: 5 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{ delay: 0.2 }}
+              type="text"
+              placeholder="Ej: name.lastname@gmail.com"
+              name="userEmail"
+              value={formValues.userEmail}
+              onChange={handleChange}
+            />
+            <div className={style.containerLabel}>
+              <motion.label
+                viewport={{ amount: 0.8, once: true }}
+                initial={{ opacity: 0, y: 5 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                }}
+                transition={{ delay: 0.4 }}
+              >
+                Message
+              </motion.label>
+              <span>{formErrors.message}</span>
+            </div>
+            <motion.input
+              viewport={{ amount: 0.8, once: true }}
+              initial={{ opacity: 0, y: 5 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{ delay: 0.4 }}
+              name="message"
+              type="text"
+              placeholder="What do you need?"
+              style={{ height: '114px' }}
+              value={formValues.message}
+              onChange={handleChange}
+            />
 
-          <motion.label
-            viewport={{ amount: 0.8, once: true }}
-            initial={{ opacity: 0, y: 5 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-          >
-            Full name
-          </motion.label>
-          <motion.input
-            viewport={{ amount: 0.8, once: true }}
-            initial={{ opacity: 0, y: 5 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            type="text"
-            placeholder="Full name"
-            name="fullName"
-            value={formValues.fullName}
-            onChange={handleChange}
-          />
-          <span>{formErrors.fullName}</span>
-
-          <motion.label
-            viewport={{ amount: 0.8, once: true }}
-            initial={{ opacity: 0, y: 5 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{ delay: 0.2 }}
-          >
-            Email
-          </motion.label>
-          <motion.input
-            viewport={{ amount: 0.8, once: true }}
-            initial={{ opacity: 0, y: 5 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{ delay: 0.2 }}
-            type="text"
-            placeholder="Ej: name.lastname@gmail.com"
-            name="userEmail"
-            value={formValues.userEmail}
-            onChange={handleChange}
-          />
-          <span>{formErrors.userEmail}</span>
-
-          <motion.label
-            viewport={{ amount: 0.8, once: true }}
-            initial={{ opacity: 0, y: 5 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{ delay: 0.4 }}
-          >
-            Message
-          </motion.label>
-          <motion.input
-            viewport={{ amount: 0.8, once: true }}
-            initial={{ opacity: 0, y: 5 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{ delay: 0.4 }}
-            name="message"
-            type="text"
-            placeholder="What do you need?"
-            style={{ height: '114px' }}
-            value={formValues.message}
-            onChange={handleChange}
-          />
-          <span>{formErrors.message}</span>
-          <motion.button
-            viewport={{ amount: 0.8, once: true }}
-            initial={{ opacity: 0, y: 5 }}
-            whileInView={{
-              opacity: 1,
-              y: 0,
-            }}
-            transition={{ delay: 0.6 }}
-            type="submit"
-            value="send"
-          >
-            <span>SEND</span>
-          </motion.button>
-          {Object.keys(formErrors).length === 0 && isSubmit ? (
-            <span className={style.sendSucceful}>Enviado!</span>
-          ) : (
-            ''
-          )}
+            <motion.button
+              viewport={{ amount: 0.8, once: true }}
+              initial={{ opacity: 0, y: 5 }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{ delay: 0.6 }}
+              type="submit"
+              value="send"
+            >
+              <span>SEND</span>
+            </motion.button>
+            {Object.keys(formErrors).length === 0 && isSubmit ? (
+              <span className={style.sendSucceful}>Enviado!</span>
+            ) : (
+              ''
+            )}
+          </div>
         </form>
       </section>
       <div className={style.iconss}>
