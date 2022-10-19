@@ -91,7 +91,7 @@ width: 100%;
     font-size: clamp(1.8rem, 0.96rem + 1.92vw, 2.4rem);
 }
 
-@media  (max-width: 700px) {
+@media  (max-width: 800px) {
   
     .info{
         flex-direction: column;

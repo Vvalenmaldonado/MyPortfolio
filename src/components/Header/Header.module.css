@@ -1,6 +1,4 @@
 
-
-
 .containerHeader{
   width: 100%;
   color: white;
@@ -65,4 +63,18 @@
 }
 .navList li:nth-child(even){
   padding: 0 1.5rem ;}
+  
+  .navMobile{
+    display: none;
+  }
 
+  @media  (max-width: 800px) {
+  
+  .containerHeader nav{
+    display: none;
+  }
+  .navMobile{
+    display: flex;
+  }
+    }
+  

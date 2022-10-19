@@ -64,13 +64,13 @@ export const Header = ({data}) => {
             }} href='#Contact' passHref>CONTACT ME   </motion.a></li>
       </ul>
  
-        <div className={`${styles.navMobile} ${styles.displayNone}`}>
+       
+      </nav>
+      <div className={`${styles.navMobile}`}>
           <NavBurger clicked={clicked} handleClick={handleClick} />
           {clicked ? <ContentNavBurger className={styles.displayNone} handleClick={handleClick} /> : null}
   
         </div>
-      </nav>
-     
     </header>
   );
 };
