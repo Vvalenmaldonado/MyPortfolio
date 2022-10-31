@@ -115,7 +115,13 @@ width: 100%;
        
     }
     .boxIcon{
-        width: 100%;;
+        width: 100%;
+        margin: 0;
+        border-radius: 8px;
+        
+    }
+    .boxIconTools{
+        margin-top: 2rem;
     }
     
   }
