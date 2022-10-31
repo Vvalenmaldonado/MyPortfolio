@@ -98,10 +98,12 @@ width: 100%;
         flex-direction: column;
     }
     .skillText{
-padding: 1rem;
+       padding: 0.5rem;
        width: 100%;
        line-height: 2rem;
-    text-align: center;
+    }
+    .text p{
+        text-align: center;
     }
     .wrapperContainerMargin{
         display: flex;

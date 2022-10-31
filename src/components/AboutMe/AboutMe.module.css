@@ -65,8 +65,8 @@
 
 .boxOpacity p{
     text-align: center;
-    padding: clamp(1rem, -1.1rem + 4.8vw, 2.5rem);
-    font-size: clamp(1rem, 0.58rem + 0.96vw, 1.3rem);
+    padding: clamp(0.5rem, -1.1rem + 4.8vw, 2.5rem);
+    font-size: clamp(1.1rem, 0.58rem + 0.96vw, 1.3rem);
 }
 .description{
     display: flex;
@@ -102,10 +102,17 @@
   
   .article{
     flex-direction: column;
-    padding: 1rem;
+    padding: 0.5rem;
   }
   .description{
     width: 100%;
   }
+  .description h2{
+    margin: 1rem 0rem;
+  }
+  .containerImageW{
+    width: 100%;
+}
+
   }
 
