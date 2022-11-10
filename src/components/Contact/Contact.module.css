@@ -19,13 +19,13 @@
     justify-content: space-around;
 }
 .talk h2{
-  
-    font-size: 3.7rem;
-
+    font-size: clamp(3rem, 1.95rem + 4.8vw, 3.75rem);
     margin-left: 3%;
     position: relative;
    bottom: 11vh;
     letter-spacing: 8px;
+    width: max-content;
+
 
 }
 .containerLT{
@@ -208,6 +208,26 @@ align-items: center;
 .contactIcons ul li img{
  height: 30px;
 }
+    
+  }@media  (max-width: 600px) {
+    .talk h2{
+        margin-left: 0%;
+        position: relative;
+        letter-spacing: 8px;
+        width: max-content;
+        align-self: center;
+    }
+    
+  }
+  @media  (max-width: 1116px) {
+    .talk h2{
+        margin-left: 0%;
+        position: relative;
+        letter-spacing: 8px;
+        width: max-content;
+        align-self: center;
+        bottom: clamp(3.51rem, 2.3266rem + 5.4099vw, 6.1rem);
+    }
     
   }
 
