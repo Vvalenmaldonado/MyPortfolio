@@ -26,7 +26,7 @@ export const Header = ({data}) => {
 
   return (
     <header className={styles.containerHeader} >
-      <nav>
+      <nav >
       <ul className={styles.navList}>
         <li>  <motion.a    viewport={{ once: true }}
             initial={{ opacity: 0, x: 60 }}
@@ -66,11 +66,11 @@ export const Header = ({data}) => {
  
        
       </nav>
-      <div className={`${styles.navMobile}`}>
+      {/* <div className={`${styles.navMobile}`}>
           <NavBurger clicked={clicked} handleClick={handleClick} />
           {clicked ? <ContentNavBurger className={styles.displayNone} handleClick={handleClick} /> : null}
   
-        </div>
+        </div> */}
     </header>
   );
 };
