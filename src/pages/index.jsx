@@ -1,3 +1,5 @@
+import 'typeface-quicksand';
+
 import React from 'react';
 
 import { AboutMe } from '@/components/AboutMe/AboutMe';

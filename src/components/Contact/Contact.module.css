@@ -25,6 +25,7 @@
    bottom: 11vh;
     letter-spacing: 8px;
     width: max-content;
+    
 
 
 }
@@ -33,6 +34,8 @@
     font-size: 4rem;
     display: flex;
     flex-direction: column;
+    font-family: vt323;
+
 }
 .imgsT{
 width: 100%;
