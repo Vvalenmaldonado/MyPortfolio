@@ -5,6 +5,7 @@
     margin: 30vh 0;
     text-align: center;
     font-family: 'Koulen';
+    letter-spacing: 0;
 }
 .Title>*{
     margin-bottom: clamp(0rem, -2.8rem + 12.8vw, 2rem);

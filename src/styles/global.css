@@ -60,7 +60,7 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Koulen';
-    letter-spacing: 3px;
+    letter-spacing:  clamp(0rem, -0.2rem + 0.8vw, 0.1rem);
   }
   
   #root, #__next {
