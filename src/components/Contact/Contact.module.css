@@ -65,12 +65,12 @@ justify-content: center;
     right: 9rem;
 }
 .containerLT .talkText{
-    font-size: clamp(6rem, 5.2174rem + 4.1739vw, 10rem);
+    font-size: clamp(4rem, 5.2174rem + 4.1739vw, 10rem);
     margin-left: clamp(3rem, 2.1739rem + 9.7391vw, 11rem);
     width: fit-content;
 }
 .containerLT span:first-child{
-    font-size: clamp(6rem, 5.2174rem + 4.1739vw, 10rem);
+    font-size: clamp(4rem, 5.2174rem + 4.1739vw, 10rem);
   
     position: relative;
   
