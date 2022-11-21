@@ -10,15 +10,17 @@
   }
 
   :root{
-    --color-principal: rgba(155,29,32,1);
+
     --color-body: rgb(245, 245, 245);
-   
     --margin-top-section: 10rem;
     --background-container:rgb(102 102 102 / 10%);;
  
   }
 
   /* Start of CSS Reset */
+
+
+
 
 
   html, body {
