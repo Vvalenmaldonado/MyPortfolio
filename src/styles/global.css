@@ -62,7 +62,9 @@
     font-family: 'Koulen';
     letter-spacing:  clamp(0rem, -0.2rem + 0.8vw, 0.1rem);
   }
-  
+  h2{
+    font-size: clamp(3rem, 2.2rem + 3.2vw, 3.8rem);
+  }
   #root, #__next {
     isolation: isolate;
     height: 100%;

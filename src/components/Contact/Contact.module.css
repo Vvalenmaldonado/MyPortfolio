@@ -19,10 +19,10 @@
     justify-content: space-around;
 }
 .talk h2{
-    font-size: clamp(3rem, 1.95rem + 4.8vw, 3.75rem);
+   
     margin-left: 3%;
     position: relative;
-   bottom: 11vh;
+   bottom: 12vh;
     letter-spacing: 8px;
     font-family: 'Koulen';
     width: max-content;
@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     font-family: 'Koulen';
-    margin-bottom: 5rem;
+    margin-bottom: clamp(1rem, -4.1429rem + 18.2857vw, 5rem);
 }
 .imgsT{
 width: 100%;
@@ -67,9 +67,7 @@ justify-content: center;
 }
 .containerLT span:first-child{
     font-size: clamp(4rem, 5.2174rem + 4.1739vw, 10rem);
-  
     position: relative;
-  
     width: fit-content;
 }
 
@@ -87,8 +85,9 @@ justify-content: center;
     margin: 0 auto;
     font-size: clamp(1rem, 0.8rem + 0.8vw, 1.2rem);
     margin-bottom: 0.5px;
-    letter-spacing: 1px;
-    font-weight:lighter;  
+    letter-spacing: 1px;  
+    position: relative;
+    bottom: 0.5rem;
 }
 .contactIcons{
     height: max-content;
@@ -96,7 +95,7 @@ justify-content: center;
     background: var(--background-container);
     border-bottom: 1px solid #6c3caf;
     border-top: 1px solid black;
-    border-radius: 2px 2px 20px 20px;
+    border-radius: 0px 0px 20px 20px;
    max-width: max-content;
    margin-left: auto;
    margin-right: auto;

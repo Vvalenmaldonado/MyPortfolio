@@ -18,11 +18,10 @@
     width: 100%;
     padding: 1rem 0rem;
 }
-.proyects h1{
+.proyects h2{
     text-align: center;
     letter-spacing: 8px;
     color: white;
-    font-size: clamp(3rem, 1.95rem + 4.8vw, 3.75rem);
     margin-bottom: 110px;
 }
 .proyects div{

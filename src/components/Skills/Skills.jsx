@@ -7,7 +7,7 @@ import style from './Skills.module.css';
 export const Skills = () => {
   return (
     <section className={style.skill}>
-      <h1>Skills</h1>
+      <h2>Skills</h2>
 
       <div className={style.wrapperContainerMargin}>
         <div className={style.info}>

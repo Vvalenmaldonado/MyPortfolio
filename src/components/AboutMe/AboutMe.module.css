@@ -17,16 +17,15 @@
     transform: skewY(6deg);
 
 }
-.aboutMe h1 {
+.aboutMe h2 {
     color: white;
-    font-size: clamp(3rem, 1.95rem + 4.8vw, 3.75rem);
     align-items:center;
     margin-left: 3%;
     position: relative;
     bottom: 3rem;
     letter-spacing: 8px;
 }
-.aboutMe h2{
+.aboutMe h3{
     font-size: clamp(2rem, 0.88rem + 5.12vw, 2.8rem);
    
 }
@@ -107,7 +106,7 @@
   .description{
     width: 100%;
   }
-  .description h2{
+  .description h3{
     margin: 1rem 0rem;
   }
   .containerImageW{

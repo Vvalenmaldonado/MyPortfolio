@@ -11,7 +11,7 @@ export const Proyects = () => {
   return (
     <section className={style.proyects}>
       <div className={style.wrapper}>
-        <h1>Proyects</h1>
+        <h2>Proyects</h2>
         <div className={style.containerCard}>
           <Link href="http://www.lavozdemonte.com" passHref>
             <motion.div

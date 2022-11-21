@@ -8,10 +8,9 @@
     max-width: 1400px;
     margin: 0 auto;
   }
-.skill h1{
+.skill h2{
     text-align: center;
     letter-spacing: 8px;
-    font-size: clamp(3rem, 1.95rem + 4.8vw, 3.75rem);
     margin-bottom: 80px;
 }
 .info{

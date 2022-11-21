@@ -25,7 +25,7 @@ export const AboutMe = () => {
 
   return (
     <section className={style.aboutMe}>
-      <h1>About me</h1>
+      <h2>About me</h2>
       <div
         className={`${style.wrapperContainer} ${style.wrapperContainerMargin}`}
       >
@@ -48,7 +48,7 @@ export const AboutMe = () => {
           </motion.div>
 
           <div className={style.description}>
-            <h2>Who I am?</h2>
+            <h3>Who I am?</h3>
             <motion.div
               viewport={{ once: true }}
               initial={{ opacity: 0, x: -60 }}
@@ -83,7 +83,7 @@ export const AboutMe = () => {
                 width="30"
                 height="30"
               />
-              <h2>What i like?</h2>
+              <h3>What i like?</h3>
             </div>
 
             <span>{things[thingsIndex]}</span>

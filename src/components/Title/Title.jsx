@@ -6,7 +6,7 @@ import style from './Title.module.css';
 export const Title = () => {
   return (
     <div className={style.Title}>
-      <motion.h2
+      <motion.h1
         viewport={{ once: true }}
         initial={{ opacity: 0, y: 60 }}
         transition={{ delay: 1 }}
@@ -16,7 +16,7 @@ export const Title = () => {
         }}
       >
         Hi welcome to my website
-      </motion.h2>
+      </motion.h1>
       <motion.h1
         viewport={{ once: true }}
         initial={{ opacity: 0, y: 60 }}
@@ -25,10 +25,11 @@ export const Title = () => {
           opacity: 1,
           y: 0,
         }}
+        className={style.name}
       >
-        I'm Valentina Maldonado.
+        I'm Valentina Maldonado
       </motion.h1>
-      <motion.h2
+      <motion.h1
         viewport={{ once: true }}
         initial={{ opacity: 0, y: 60 }}
         transition={{ delay: 1.4 }}
@@ -38,7 +39,7 @@ export const Title = () => {
         }}
       >
         FRONT-END Developer Jr
-      </motion.h2>
+      </motion.h1>
     </div>
   );
 };
