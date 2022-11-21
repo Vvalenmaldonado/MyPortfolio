@@ -3,6 +3,7 @@
 
 import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 import style from './Contact.module.css';
@@ -256,16 +257,22 @@ export const Contact = () => {
         <div className={style.contactIcons}>
           <ul>
             <li>
-              <img src="images/contact/github.png" alt="github" />
+              <Link href="https://www.github.com/vvalenmaldonado" passHref>
+                <img src="images/contact/github.png" alt="github" />
+              </Link>
             </li>
             <li>
-              <img src="images/contact/linkedin.png" alt="linkedin" />
+              <Link
+                href="https://www.linkedin.com/in/valentina-maldonado-b41a37231/"
+                passHref
+              >
+                <img src="images/contact/linkedin.png" alt="linkedin" />
+              </Link>
             </li>
             <li>
-              <img src="images/contact/instagram.png" alt="instagram" />
-            </li>
-            <li>
-              <img src="images/contact/Twitter.png" alt="Twitter" />
+              <Link href="https://www.twitter.com/vvalenmaldonado" passHref>
+                <img src="images/contact/Twitter.png" alt="Twitter" />
+              </Link>
             </li>
           </ul>
         </div>
