@@ -12,6 +12,6 @@
     margin-bottom: clamp(0rem, -2.8rem + 12.8vw, 2rem);
 }
 .Title .name{
-    font-size: clamp(1rem, -4.1429rem + 18.2857vw, 5.5rem);
+    font-size: clamp(1rem, -4.1429rem + 18.2857vw, 6rem);
 }
 

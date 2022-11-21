@@ -9,7 +9,7 @@ export const Title = () => {
       <motion.h1
         viewport={{ once: true }}
         initial={{ opacity: 0, y: 60 }}
-        transition={{ delay: 1 }}
+        transition={{ delay: 1.5 }}
         whileInView={{
           opacity: 1,
           y: 0,
@@ -20,7 +20,7 @@ export const Title = () => {
       <motion.h1
         viewport={{ once: true }}
         initial={{ opacity: 0, y: 60 }}
-        transition={{ delay: 1.2 }}
+        transition={{ delay: 1.7 }}
         whileInView={{
           opacity: 1,
           y: 0,
@@ -32,7 +32,7 @@ export const Title = () => {
       <motion.h1
         viewport={{ once: true }}
         initial={{ opacity: 0, y: 60 }}
-        transition={{ delay: 1.4 }}
+        transition={{ delay: 1.9 }}
         whileInView={{
           opacity: 1,
           y: 0,
