@@ -31,10 +31,10 @@
 }
 .containerLT{
     position: absolute;
-    font-size: 4rem;
+  
     display: flex;
     flex-direction: column;
-  
+    font-family: 'VT323';
 
 }
 .imgsT{

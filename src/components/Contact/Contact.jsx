@@ -1,6 +1,6 @@
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable @next/next/no-img-element */
-import localFont from '@next/font/local';
+
 import emailjs from 'emailjs-com';
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
