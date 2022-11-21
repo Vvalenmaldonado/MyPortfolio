@@ -24,19 +24,15 @@
     position: relative;
    bottom: 11vh;
     letter-spacing: 8px;
+    font-family: 'Koulen';
     width: max-content;
-    
-
-
 }
 .containerLT{
     position: absolute;
-  
     display: flex;
     flex-direction: column;
     font-family: 'Koulen';
     margin-bottom: 5rem;
-
 }
 .imgsT{
 width: 100%;
