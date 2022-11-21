@@ -34,7 +34,8 @@
   
     display: flex;
     flex-direction: column;
-    font-family: 'VT323';
+    font-family: 'Koulen';
+    margin-bottom: 5rem;
 
 }
 .imgsT{
@@ -64,14 +65,15 @@ justify-content: center;
     right: 9rem;
 }
 .containerLT .talkText{
-    font-size: clamp(5rem, 5.2174rem + 4.1739vw, 9rem);
+    font-size: clamp(6rem, 5.2174rem + 4.1739vw, 10rem);
     margin-left: clamp(3rem, 2.1739rem + 9.7391vw, 11rem);
     width: fit-content;
 }
 .containerLT span:first-child{
-    font-size: clamp(5rem, 3.1667rem + 5.3333vw, 8rem);
+    font-size: clamp(6rem, 5.2174rem + 4.1739vw, 10rem);
+  
     position: relative;
-    left:  clamp(0rem, 6.0417rem + -6.6667vw, 2.5rem);
+  
     width: fit-content;
 }
 
