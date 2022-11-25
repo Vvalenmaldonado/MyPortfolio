@@ -34,9 +34,9 @@ const HomePage = () => {
       <a id="Proyects" name="Proyects">
         <Proyects />
       </a>
-      {/* <a id="Contact" name="Contact">
+      <a id="Contact" name="Contact">
         <Contact />
-      </a> */}
+      </a>
     </div>
   );
 };
