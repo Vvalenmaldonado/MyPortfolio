@@ -14,7 +14,7 @@ export const Contact = () => {
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState({});
 
-  const [isSubmit, setIsSubmit] = useState(false);
+  const [emailSent, setEmailSent] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,12 +22,12 @@ export const Contact = () => {
   };
 
   /*Form validation 2 */
-  useEffect(() => {
-    console.log(formErrors);
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      console.log(formValues);
-    }
-  }, [formErrors]);
+  // useEffect(() => {
+  //   console.log(formErrors);
+  //   if (Object.keys(formErrors).length === 0 && isSubmit) {
+  //     console.log(formValues, 'holaaa');
+  //   }
+  // }, [formErrors]);
 
   const validate = (values) => {
     const errors = {};
@@ -52,21 +52,23 @@ export const Contact = () => {
   function sendEmail(e) {
     e.preventDefault();
 
-    setFormErrors(validate(formValues));
-    console.log(formErrors, 'HOLA');
-    if (Object.keys(formErrors).length === 0 && isSubmit) {
-      const emailJS = emailjs
-        .sendForm(
-          'service_l8y7bmk',
-          'template_baf0n8v',
-          e.target,
-          'tyfdjcsH2ExI7pkBi'
-        )
-        .then((res) => console.log(res))
-        .catch((err) => console.log(err));
-      return emailJS;
+    const errors = validate(formValues);
+    console.log('errors', errors);
+    if (Object.keys(errors).length !== 0) {
+      setFormErrors(errors);
+      return;
     }
-    setIsSubmit(true);
+
+    emailjs
+      .sendForm(
+        'service_l8y7bmk',
+        'template_baf0n8v',
+        e.target,
+        'tyfdjcsH2ExI7pkBi'
+      )
+      .then((res) => setEmailSent(true))
+      .catch((err) => console.log(err));
+    console.log('success pepe');
   }
   return (
     <div>
@@ -240,11 +242,10 @@ export const Contact = () => {
               }}
               transition={{ delay: 0.6 }}
               type="submit"
-              value="send"
             >
               <span>SEND</span>
             </motion.button>
-            {Object.keys(formErrors).length === 0 && isSubmit ? (
+            {emailSent ? (
               <span className={style.sendSucceful}>Enviado!</span>
             ) : (
               ''
