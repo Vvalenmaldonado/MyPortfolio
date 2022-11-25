@@ -25,12 +25,12 @@ const HomePage = () => {
         </a>
       </div>
 
-      {/* <a id="AboutMe" name="AboutMe" passHref>
+      <a id="AboutMe" name="AboutMe" passHref>
         <AboutMe />
-      </a> */}
-      <a id="Skills" name="Skills">
-        <Skills />
       </a>
+      {/* <a id="Skills" name="Skills">
+        <Skills />
+      </a> */}
       <a id="Proyects" name="Proyects">
         <Proyects />
       </a>
