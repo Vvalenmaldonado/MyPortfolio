@@ -25,9 +25,9 @@ const HomePage = () => {
         </a>
       </div>
 
-      <a id="AboutMe" name="AboutMe" passHref>
+      {/* <a id="AboutMe" name="AboutMe" passHref>
         <AboutMe />
-      </a>
+      </a> */}
       <a id="Skills" name="Skills">
         <Skills />
       </a>
