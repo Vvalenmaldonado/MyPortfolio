@@ -20,16 +20,8 @@ export const Skills = () => {
                 la creacion de sitios web.
               </p>
             </div>
-            {/* <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit
-                convallis, eros aliquam per sem maecenas blandit primis libero,
-                odio pretium nascetur rutrum <br /> bibendum ante potenti.
-                Eleifend lacus lectus habitant ridiculus ullamcorper augue{' '}
-              </p>
-            </div> */}
           </div>
-          <motion.div
+          {/* <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, x: 60 }}
             whileInView={{
@@ -94,9 +86,9 @@ export const Skills = () => {
                 <span>In process..</span>
               </li>
             </ul>
-          </motion.div>
+          </motion.div> */}
         </div>
-        <motion.div
+        {/* <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, x: -60 }}
           whileInView={{
@@ -152,7 +144,7 @@ export const Skills = () => {
               <span>In process..</span>
             </li>
           </ul>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
