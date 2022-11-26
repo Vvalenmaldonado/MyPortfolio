@@ -13,7 +13,7 @@ import { Title } from '@/components/Title/Title';
 
 const HomePage = () => {
   return (
-    <div>
+    <div className="containerrr">
       <Head />
 
       <div className="wrapperHero">
