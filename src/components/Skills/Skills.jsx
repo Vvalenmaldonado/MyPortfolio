@@ -21,7 +21,7 @@ export const Skills = () => {
               </p>
             </div>
           </div>
-          {/* <motion.div
+          <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0, x: 60 }}
             whileInView={{
@@ -86,9 +86,9 @@ export const Skills = () => {
                 <span>In process..</span>
               </li>
             </ul>
-          </motion.div> */}
+          </motion.div>
         </div>
-        {/* <motion.div
+        <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0, x: -60 }}
           whileInView={{
@@ -144,7 +144,7 @@ export const Skills = () => {
               <span>In process..</span>
             </li>
           </ul>
-        </motion.div> */}
+        </motion.div>
       </div>
     </section>
   );
