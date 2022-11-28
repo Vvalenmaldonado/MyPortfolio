@@ -27,10 +27,10 @@ export const Head = ({
 Head.defaultProps = {
   author: 'Valentina Maldonado',
   description: 'Portfolio digital',
-  keywords: ', San miguel del Monte, Diario, Periodismo Local ',
+  keywords: 'Portfolio, frontend developer, valentina maldonado',
   ogDescription: '',
   ogImage: '/images/ogImage/image.jpg',
   ogTitle: 'Valentina Maldonado',
   ogUrl: 'https://vvalenmaldonado.com',
-  title: 'Valentina Maldonado',
+  title: 'Valentina Maldonado | Front-end developer',
 };

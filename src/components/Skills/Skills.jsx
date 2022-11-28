@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import { Loop } from '@mui/icons-material';
+
 import { motion } from 'framer-motion';
 import React from 'react';
 

@@ -29,7 +29,7 @@
     animation-duration: 1;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-   filter: blur(30px);
+   filter: blur(22px);
    transform: translateZ(0px);
 }
 
@@ -75,7 +75,7 @@
 .background span:nth-child(5) {
   color: #231681;
   top: 85%;
-  left: -20%;
+  left: -36%;
   animation-duration: 6s;
   animation-delay: -4s;
   transform-origin: -1vw 10vh;
