@@ -1,6 +1,6 @@
 .Title{
     color: white;
-    font-size: clamp(1rem, 0.1045rem + 3.5821vw, 1.8rem);
+    
     padding: 0rem 1rem;
     margin: 30vh 0;
     text-align: center;
@@ -12,16 +12,17 @@
   
     margin-bottom: clamp(0rem, -2.8rem + 12.8vw, 1rem);
 }
+.Title h1:not(.name){
+    font-size: clamp(1rem, -1.2857rem + 9.1429vw, 5rem);
+}
 .Title .name{
-    font-size: clamp(1rem, -4.1429rem + 18.2857vw, 6rem);
+    font-size: clamp(1.5rem, -1.3571rem + 11.4286vw, 6.5rem);
 }
 
 @media  (max-width: 800px) {
   
  .Title{
-    margin: 50vh 0;
+    margin: 35vh 0;
  }
- .Title .name{
-    font-size: clamp(1rem, 0.1045rem + 3.5821vw, 1.8rem);
- }
+
   }
