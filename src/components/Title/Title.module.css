@@ -13,10 +13,10 @@
     margin-bottom: clamp(0rem, -2.8rem + 12.8vw, 1rem);
 }
 .Title h1:not(.name){
-    font-size: clamp(1rem, -1.2857rem + 9.1429vw, 5rem);
+    font-size: clamp(2rem, 0.2857rem + 6.8571vw, 5rem);
 }
 .Title .name{
-    font-size: clamp(1.5rem, -1.3571rem + 11.4286vw, 6.5rem);
+    font-size: clamp(2.5rem, 0.2143rem + 9.1429vw, 6.5rem);
 }
 
 @media  (max-width: 800px) {
