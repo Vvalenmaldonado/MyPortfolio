@@ -17,7 +17,7 @@
 
 @media  (max-width: 800px) {
   
- .Title{
-    font-size: clamp(1rem, -4.1429rem + 18.2857vw, 6rem);
+ .name{
+    font-size: clamp(1rem, 0.1045rem + 3.5821vw, 1.8rem);
  }
   }
