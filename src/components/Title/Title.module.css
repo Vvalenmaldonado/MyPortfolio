@@ -19,7 +19,7 @@
 @media  (max-width: 800px) {
   
  .Title{
-        margin: 1rem 0rem; 
+    margin: 50vh 0;
  }
  .Title .name{
     font-size: clamp(1rem, 0.1045rem + 3.5821vw, 1.8rem);
