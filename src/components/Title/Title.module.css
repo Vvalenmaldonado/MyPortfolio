@@ -13,12 +13,12 @@
     margin-bottom: clamp(0rem, -2.8rem + 12.8vw, 1rem);
 }
 .Title .name{
-    font-size: 1.8rem;
+   
 }
 
 @media  (max-width: 800px) {
   
  .name{
-    font-size: 1.8rem
+
  }
   }
