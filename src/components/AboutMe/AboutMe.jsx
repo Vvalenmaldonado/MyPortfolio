@@ -60,20 +60,16 @@ export const AboutMe = () => {
               className={style.boxOpacity}
             >
               <p>
-                Soy una desarrolladora web que esta en una constante búsqueda de
-                aprender y desarrollarme profesionalmente en software,
-                orientandome hacia el desarrollo front-end. A medida que fui
-                sumergiéndome en el mundo IT descubrí una pasión por el
-                desarrollo pero también por el diseño, buscando que el producto
-                final ademas de ser funcional tenga criterio de diseño y
-                estética. Me destaco por mi personalidad extrovertida sintiendo
-                muy cómoda en grupos de trabajo, sin dificultad de comunicación
-                y fácil adaptación. Aspiro a formar parte de un equipo de
-                trabajo que me permita crecer profesionalmente y me acompañe en
-                desarrollar mis habilidades día a día. Actualmente me desempeño
-                como desarrollador web de forma autónoma, capacitándome para
-                tener todas las herramientas que se requieran para brindar una
-                solución acorde a lo que se necesite.
+                I am a web developer who is in a constant search to learn and
+                develop professionally in software, focused on front-end
+                development. I stand out for my outgoing personality, feeling
+                very comfortable in work groups, without communication
+                difficulties and easy to adapt. I aspire to be part of a work
+                team that allows me to grow professionally and guides me in the
+                development of my skills day by day. I currently work as a web
+                developer independently, training myself to have all the tools
+                that are required to provide a solution according to what is
+                needed.
               </p>
             </motion.div>
             <div className={style.whatILike}>

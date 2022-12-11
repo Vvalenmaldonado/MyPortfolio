@@ -14,10 +14,9 @@ export const Skills = () => {
           <div className={style.skillText}>
             <div className={style.text}>
               <p>
-                Durante mi proceso de aprendizaje como desarrolladora front-end,
-                utilice la plataforma Udemy y Youtube para consumir cursos que
-                me enseñen todas las herramientas y technologias necesarias para
-                la creacion de sitios web.
+                During my learning process as a front-end developer, I used the
+                Udemy platform and Youtube to consume courses that teach me all
+                the tools and technologies necessary to create websites.
               </p>
             </div>
           </div>
