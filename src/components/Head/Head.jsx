@@ -1,6 +1,6 @@
 import NextHead from 'next/head';
 
-const image = 'public/images/aboutme/OGValen.png';
+const image = 'images/aboutme/OGValen.png';
 export const Head = ({
   title,
   description,
@@ -29,7 +29,7 @@ Head.defaultProps = {
   description: '',
   keywords: 'Portfolio, frontend developer, valentina maldonado',
   ogDescription: 'Valentina Maldonado | Front-end developer',
-  ogImage: 'public/images/aboutme/OGValen.png',
+  ogImage: 'images/aboutme/OGValen.png',
   ogTitle: 'Valentina Maldonado | Front-end developer',
   ogUrl: 'https://vvalenmaldonado.com',
   title: 'Valentina Maldonado | Front-end developer',
