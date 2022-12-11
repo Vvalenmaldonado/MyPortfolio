@@ -59,11 +59,11 @@ export const Proyects = () => {
               <div className={style.CircleText}>
                 <h3>
                   LA VOZ DE MONTE
-                  <br /> diario digital
+                  <br /> digital diary
                 </h3>
                 <p>
-                  Trabajo freelance. Utilice Figma para el diseno y la
-                  desarrolle con React.js, Next.js y Sanity.io
+                  Freelance work. I used figma for the design and React.js,
+                  Next.js, Sanity.io, Vercel for development
                 </p>
               </div>
             </Link>
@@ -114,7 +114,7 @@ export const Proyects = () => {
             <Link href="https://ableton-frontend-practice.vercel.app/" passHref>
               <div className={style.CircleText}>
                 <h3>Ableton | copy</h3>
-                <p>Practica personal. Utilizando HTML, CSS y Javascript</p>
+                <p>Personal practice. Using HTML, CSS and Javascript</p>
               </div>
             </Link>
           </motion.div>
@@ -165,7 +165,7 @@ export const Proyects = () => {
               <div className={style.CircleText}>
                 <h3>Starbucks | copy</h3>
 
-                <p>Practica personal. Utilizando HTML, CSS y Javascript</p>
+                <p>Personal practice. Using HTML, CSS and Javascript</p>
               </div>
             </Link>
           </motion.div>
@@ -220,7 +220,7 @@ export const Proyects = () => {
               <div className={style.CircleText}>
                 <h3>Red Square | copy</h3>
 
-                <p>Practica personal. Utilizando HTML, CSS y Javascript</p>
+                <p>Personal practice. Using HTML, CSS and Javascript</p>
               </div>
             </Link>
           </motion.div>
