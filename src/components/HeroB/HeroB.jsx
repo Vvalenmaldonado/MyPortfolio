@@ -4,7 +4,7 @@ import style from './HeroB.module.css';
 
 export const HeroB = () => {
   return (
-    <div class={style.background}>
+    <div className={style.background}>
       <span></span>
       <span></span>
       <span></span>

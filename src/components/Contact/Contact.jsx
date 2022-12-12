@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/link-passhref */
 /* eslint-disable import/no-named-as-default-member */
 /* eslint-disable @next/next/no-img-element */
 
@@ -257,20 +258,17 @@ export const Contact = () => {
         <div className={style.contactIcons}>
           <ul>
             <li>
-              <Link href="https://www.github.com/vvalenmaldonado" passHref>
+              <Link href="https://www.github.com/vvalenmaldonado">
                 <img src="images/contact/github.png" alt="github" />
               </Link>
             </li>
             <li>
-              <Link
-                href="https://www.linkedin.com/in/valentina-maldonado-b41a37231/"
-                passHref
-              >
+              <Link href="https://www.linkedin.com/in/valentina-maldonado-b41a37231/">
                 <img src="images/contact/linkedin.png" alt="linkedin" />
               </Link>
             </li>
             <li>
-              <Link href="https://www.twitter.com/vvalenmaldonado" passHref>
+              <Link href="https://www.twitter.com/vvalenmaldonado">
                 <img src="images/contact/Twitter.png" alt="Twitter" />
               </Link>
             </li>

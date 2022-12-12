@@ -25,7 +25,7 @@ const HomePage = () => {
         </a>
       </div>
 
-      <a id="AboutMe" name="AboutMe" passHref>
+      <a id="AboutMe" name="AboutMe">
         <AboutMe />
       </a>
       <a id="Skills" name="Skills">
