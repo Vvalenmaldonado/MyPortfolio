@@ -7,7 +7,6 @@ import React from 'react';
 import style from './Proyects.module.css';
 
 export const Proyects = () => {
-  console.log('rereender proyects');
   return (
     <section className={style.proyects}>
       <div className={style.wrapper}>

@@ -53,7 +53,7 @@ export const Contact = () => {
     e.preventDefault();
 
     const errors = validate(formValues);
-    console.log('errors', errors);
+
     if (Object.keys(errors).length !== 0) {
       setFormErrors(errors);
       return;
@@ -68,7 +68,6 @@ export const Contact = () => {
       )
       .then((res) => setEmailSent(true))
       .catch((err) => console.log(err));
-    console.log('success pepe');
   }
   return (
     <div>
