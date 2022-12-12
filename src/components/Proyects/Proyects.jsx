@@ -13,7 +13,11 @@ export const Proyects = () => {
       <div className={style.wrapper}>
         <h2>Proyects</h2>
         <div className={style.containerCard}>
-          <Link href="http://www.lavozdemonte.com">
+          <Link
+            href="http://www.lavozdemonte.com"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <motion.div
               viewport={{ once: true }}
               initial={{ opacity: 0, x: -60 }}
@@ -55,7 +59,11 @@ export const Proyects = () => {
                 </li>
               </ul>
             </div>
-            <Link href="http://www.lavozdemonte.com">
+            <Link
+              href="http://www.lavozdemonte.com"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <div className={style.CircleText}>
                 <h3>
                   LA VOZ DE MONTE
@@ -70,7 +78,11 @@ export const Proyects = () => {
           </motion.div>
         </div>
         <div className={style.containerCard}>
-          <Link href="https://ableton-frontend-practice.vercel.app/">
+          <Link
+            href="https://ableton-frontend-practice.vercel.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <motion.div
               viewport={{ once: true }}
               initial={{ opacity: 0, x: -60 }}
@@ -111,7 +123,11 @@ export const Proyects = () => {
                 </li>
               </ul>
             </div>
-            <Link href="https://ableton-frontend-practice.vercel.app/">
+            <Link
+              href="https://ableton-frontend-practice.vercel.app/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <div className={style.CircleText}>
                 <h3>Ableton | copy</h3>
                 <p>Personal practice. Using HTML, CSS and Javascript</p>
@@ -120,7 +136,11 @@ export const Proyects = () => {
           </motion.div>
         </div>
         <div className={style.containerCard}>
-          <Link href="https://starbucks-clon.vercel.app/">
+          <Link
+            href="https://starbucks-clon.vercel.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <motion.div
               viewport={{ once: true }}
               initial={{ opacity: 0, x: -60 }}
@@ -171,7 +191,11 @@ export const Proyects = () => {
           </motion.div>
         </div>
         <div className={style.containerCard}>
-          <Link href="https://ableton-frontend-practice.vercel.app/">
+          <Link
+            href="https://ableton-frontend-practice.vercel.app/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             <motion.div
               viewport={{ once: true }}
               initial={{ opacity: 0, x: -60 }}
@@ -216,7 +240,11 @@ export const Proyects = () => {
                 </li>
               </ul>
             </div>
-            <Link href="https://starbucks-clon.vercel.app/">
+            <Link
+              href="https://starbucks-clon.vercel.app/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
               <div className={style.CircleText}>
                 <h3>Red Square | copy</h3>
 
