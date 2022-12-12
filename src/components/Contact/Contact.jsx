@@ -258,17 +258,29 @@ export const Contact = () => {
         <div className={style.contactIcons}>
           <ul>
             <li>
-              <Link href="https://www.github.com/vvalenmaldonado">
+              <Link
+                href="https://www.github.com/vvalenmaldonado"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src="images/contact/github.png" alt="github" />
               </Link>
             </li>
             <li>
-              <Link href="https://www.linkedin.com/in/valentina-maldonado-b41a37231/">
+              <Link
+                href="https://www.linkedin.com/in/valentina-maldonado-b41a37231/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src="images/contact/linkedin.png" alt="linkedin" />
               </Link>
             </li>
             <li>
-              <Link href="https://www.twitter.com/vvalenmaldonado">
+              <Link
+                href="https://www.twitter.com/vvalenmaldonado"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <img src="images/contact/Twitter.png" alt="Twitter" />
               </Link>
             </li>
