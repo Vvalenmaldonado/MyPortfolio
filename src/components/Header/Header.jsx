@@ -51,7 +51,7 @@ export const Header = ({data}) => {
             whileInView={{
               opacity: 1,
               x: 0,
-            }} href='#Proyects' >PROYECTS</motion.a></li>
+            }} href='#Proyects' >PROJECTS</motion.a></li>
         <li>  <motion.a viewport={{ once: true }}
             initial={{ opacity: 0, x: 60 }}
             transition={{ delay: 0.8 }}
