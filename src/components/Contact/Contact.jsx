@@ -267,17 +267,20 @@ export const Contact = () => {
               </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="https://www.linkedin.com/in/valentina-maldonado-b41a37231/"
                 target="_blank"
               >
                 <img src="images/contact/linkedin.png" alt="linkedin" />
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="https://www.twitter.com/vvalenmaldonado" target="_blank">
+              <Link
+                href="https://www.twitter.com/vvalenmaldonado"
+                target="_blank"
+              >
                 <img src="images/contact/Twitter.png" alt="Twitter" />
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
