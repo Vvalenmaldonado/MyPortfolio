@@ -38,7 +38,7 @@ export const Title = () => {
           y: 0,
         }}
       >
-        FRONT-END Developer Jr
+        FRONT-END Developer
       </motion.h1>
     </div>
   );

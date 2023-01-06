@@ -112,6 +112,7 @@ justify-content: center;
 .contactIcons ul li img{
     height: 38px;
     margin-left: 0.5rem;
+    cursor:pointer;
 }
 .inputs{
     display: flex;
@@ -168,6 +169,10 @@ justify-content: center;
     border-bottom: 0px;
     border: 0px;
     color: white;
+    cursor:pointer;
+}
+.inputs button:hover{
+    transform: scale(0.2);
 }
 
 .containerForm{

@@ -39,6 +39,7 @@
     width: 60%;
     padding: .5rem;
     object-fit: cover;
+    user-select: none;
 }
 .circle img:last-child{
     width: 20%;

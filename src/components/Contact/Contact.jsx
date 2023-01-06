@@ -246,7 +246,7 @@ export const Contact = () => {
               <span>SEND</span>
             </motion.button>
             {emailSent ? (
-              <span className={style.sendSucceful}>Enviado!</span>
+              <span className={style.sendSucceful}>Thank you!</span>
             ) : (
               ''
             )}
@@ -267,22 +267,17 @@ export const Contact = () => {
               </Link>
             </li>
             <li>
-              <Link
+              <a
                 href="https://www.linkedin.com/in/valentina-maldonado-b41a37231/"
                 target="_blank"
-                rel="noreferrer noopener"
               >
                 <img src="images/contact/linkedin.png" alt="linkedin" />
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                href="https://www.twitter.com/vvalenmaldonado"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
+              <a href="https://www.twitter.com/vvalenmaldonado" target="_blank">
                 <img src="images/contact/Twitter.png" alt="Twitter" />
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
