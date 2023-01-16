@@ -41,24 +41,29 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+user-select: none;
 }
 .imgsT img{
     width: clamp(7rem, 4.913rem + 11.1304vw, 15rem);
+    user-select: none;
 }
 .imgsT img:first-child{
     position: relative;
     bottom: 1rem;
     right: clamp(7rem, -2.9167rem + 18.6667vw, 14rem);
+    user-select: none;
 }
 .second{
     position: relative;
     left:  clamp(2rem, 2.5rem + 16vw, 17rem);
     bottom: 3rem;
+    user-select: none;
 }
 .imgsT img:last-child{
     position: relative;
     top: 2rem;
     right: 9rem;
+    user-select: none;
 }
 .containerLT .talkText{
     font-size: clamp(4rem, 5.2174rem + 4.1739vw, 10rem);
@@ -113,6 +118,7 @@ justify-content: center;
     height: 38px;
     margin-left: 0.5rem;
     cursor:pointer;
+    user-select: none;
 }
 .inputs{
     display: flex;
@@ -177,6 +183,9 @@ justify-content: center;
 .sendSucceful{
     
     font-family: Koulen;
+    letter-spacing: 2px;
+    margin-top: .8rem;
+    font-size: 1.2rem;
 
 }
 
