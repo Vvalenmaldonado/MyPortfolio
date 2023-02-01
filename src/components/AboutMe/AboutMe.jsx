@@ -48,7 +48,7 @@ export const AboutMe = () => {
           </motion.div>
 
           <div className={style.description}>
-            <h3>Who I am?</h3>
+            <h3>Who am I?</h3>
             <motion.div
               viewport={{ once: true }}
               initial={{ opacity: 0, x: -60 }}
@@ -79,7 +79,7 @@ export const AboutMe = () => {
                 width="30"
                 height="30"
               />
-              <h3>What i like?</h3>
+              <h3>What I like?</h3>
             </div>
 
             <span>{things[thingsIndex]}</span>

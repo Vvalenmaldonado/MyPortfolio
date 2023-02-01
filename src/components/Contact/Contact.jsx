@@ -145,7 +145,7 @@ export const Contact = () => {
 
         <form className={style.inputs} onSubmit={sendEmail}>
           <div className={style.containerSend}>
-            <h3>Send me your message</h3>
+            <h3>Send me a message</h3>
             <img src="images/contact/correo-electronico.png" alt="correo" />
           </div>
           <div className={style.containerForm}>
