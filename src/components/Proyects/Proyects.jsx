@@ -192,7 +192,7 @@ export const Proyects = () => {
         </div>
         <div className={style.containerCard}>
           <Link
-            href="https://ableton-frontend-practice.vercel.app/"
+            href="https://red-square-clon.vercel.app/"
             target="_blank"
             rel="noreferrer noopener"
           >
@@ -241,7 +241,7 @@ export const Proyects = () => {
               </ul>
             </div>
             <Link
-              href="https://starbucks-clon.vercel.app/"
+              href="https://red-square-clon.vercel.app/"
               target="_blank"
               rel="noreferrer noopener"
             >
