@@ -65,6 +65,18 @@ export const Skills = () => {
                   <br /> web
                 </span>
               </li>
+              <li>
+                <svg
+                  width="88"
+                  height="57"
+                  viewBox="0 0 76 65"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#ffffff" />
+                </svg>
+                <span>Vercel</span>
+              </li>
 
               <li>
                 <img src="images/Skills/nextjs.png" alt="NextJs" />

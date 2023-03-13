@@ -37,14 +37,14 @@ export const Header = ({data}) => {
             whileInView={{
               opacity: 1,
               x: 0,
-            }} href='#AboutMe' >ABOUT </motion.a> </li>
+            }} href='#AboutMe' >ABOUT</motion.a> </li>
         <li>  <motion.a viewport={{ once: true }}
             initial={{ opacity: 0, x: 60 }}
             transition={{ delay: 0.4}}
             whileInView={{
               opacity: 1,
               x: 0,
-            }}href='#Skills' >SKILLS </motion.a></li>
+            }}href='#Skills' >SKILLS</motion.a></li>
         <li>  <motion.a viewport={{ once: true }}
             initial={{ opacity: 0, x: 60 }}
             transition={{ delay: 0.6 }}
@@ -58,7 +58,7 @@ export const Header = ({data}) => {
             whileInView={{
               opacity: 1,
               x: 0,
-            }} href='#Contact' >CONTACT ME   </motion.a></li>
+            }} href='#Contact' >CONTACT ME</motion.a></li>
       </ul>
  
        

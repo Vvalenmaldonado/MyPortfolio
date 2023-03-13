@@ -14,6 +14,102 @@ export const Proyects = () => {
         <h2>Projects</h2>
         <div className={style.containerCard}>
           <Link
+            href="https://www.carbonno.ai/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              className={style.circle}
+            >
+              <img
+                className={style.Computerimg}
+                src="images/proyects/desktopCa.png"
+                alt=""
+              />
+              <img src="images/proyects/MobileCarbonno.png" alt="" />
+            </motion.div>
+          </Link>
+
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            className={style.circleInfo}
+          >
+            <Link
+              href="https://www.carbonno.ai/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <div className={style.CircleText}>
+                <h3> Carbonno | Website </h3>
+                <p>
+                  Freelance. Using Next.js, Framer Motion, SCSS, TypeScript and
+                  Vercel.
+                </p>
+              </div>
+            </Link>
+          </motion.div>
+        </div>
+        <div className={style.containerCard}>
+          <Link
+            href="https://facumontanaro.com/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <motion.div
+              viewport={{ once: true }}
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              className={style.circle}
+            >
+              <img
+                className={style.Computerimg}
+                src="images/proyects/FacuDesktop.png"
+                alt=""
+              />
+              <img src="images/proyects/MobileFacuF.png" alt="" />
+            </motion.div>
+          </Link>
+
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0, x: 60 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+            }}
+            className={style.circleInfo}
+          >
+            <Link
+              href="https://facumontanaro.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <div className={style.CircleText}>
+                <h3> Facu Montanaro | Portfolio </h3>
+                <p>
+                  Freelance. Using Next.js, Sanity.io, Framer Motion, Tailwind,
+                  TypeScript and Vercel.
+                </p>
+              </div>
+            </Link>
+          </motion.div>
+        </div>
+        <div className={style.containerCard}>
+          <Link
             href="http://www.lavozdemonte.com"
             target="_blank"
             rel="noreferrer noopener"
@@ -46,32 +142,16 @@ export const Proyects = () => {
             }}
             className={style.circleInfo}
           >
-            <div className={style.solapa}>
-              <ul>
-                <li>
-                  <img src="images/Skills/html.png" alt="html" />
-                </li>
-                <li>
-                  <img src="images/Skills/css.png" alt="css" />
-                </li>
-                <li>
-                  <img src="images/Skills/javascript.png" alt="Javascript" />
-                </li>
-              </ul>
-            </div>
             <Link
               href="http://www.lavozdemonte.com"
               target="_blank"
               rel="noreferrer noopener"
             >
               <div className={style.CircleText}>
-                <h3>
-                  LA VOZ DE MONTE
-                  <br /> digital diary
-                </h3>
+                <h3>LA VOZ DE MONTE | Digital Diary</h3>
                 <p>
-                  Freelance work. I used figma for the design and React.js,
-                  Next.js, Sanity.io, Vercel for development
+                  Freelance. I used figma for the design and React.js, Next.js,
+                  Sanity.io and Vercel.
                 </p>
               </div>
             </Link>
@@ -110,19 +190,6 @@ export const Proyects = () => {
             }}
             className={style.circleInfo}
           >
-            <div className={style.solapa}>
-              <ul>
-                <li>
-                  <img src="images/Skills/html.png" alt="html" />
-                </li>
-                <li>
-                  <img src="images/Skills/css.png" alt="css" />
-                </li>
-                <li>
-                  <img src="images/Skills/javascript.png" alt="Javascript" />
-                </li>
-              </ul>
-            </div>
             <Link
               href="https://ableton-frontend-practice.vercel.app/"
               target="_blank"
@@ -168,19 +235,6 @@ export const Proyects = () => {
             }}
             className={style.circleInfo}
           >
-            <div className={style.solapa}>
-              <ul>
-                <li>
-                  <img src="images/Skills/html.png" alt="html" />
-                </li>
-                <li>
-                  <img src="images/Skills/css.png" alt="css" />
-                </li>
-                <li>
-                  <img src="images/Skills/javascript.png" alt="Javascript" />
-                </li>
-              </ul>
-            </div>
             <Link href="https://starbucks-clon.vercel.app/">
               <div className={style.CircleText}>
                 <h3>Starbucks | copy</h3>
@@ -227,19 +281,6 @@ export const Proyects = () => {
             }}
             className={style.circleInfo}
           >
-            <div className={style.solapa}>
-              <ul>
-                <li>
-                  <img src="images/Skills/html.png" alt="html" />
-                </li>
-                <li>
-                  <img src="images/Skills/css.png" alt="css" />
-                </li>
-                <li>
-                  <img src="images/Skills/javascript.png" alt="Javascript" />
-                </li>
-              </ul>
-            </div>
             <Link
               href="https://red-square-clon.vercel.app/"
               target="_blank"

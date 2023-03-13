@@ -8,7 +8,7 @@
      margin-top: var(--margin-top-section);
 }
 .wrapper{
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -63,15 +63,8 @@
 }
 /*Animation hover */
 .circleInfo:hover  .CircleText{
-border-bottom: 1px solid #6c3caf;
-border-left: 1px solid #6c3caf;
-border-right: 1px solid #6c3caf;
-
+border: 1px solid #6c3caf;
   }
-  .circleInfo:hover  .solapa{
-    border-top: 1px solid #6c3caf;
-      }
-
 
 /*Fin de animation hover*/
 .solapa ul{
