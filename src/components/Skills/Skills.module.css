@@ -72,6 +72,9 @@ width: 100%;
 .boxIcon ul li img{
     width: clamp(2.2rem, 1.45rem + 3vw, 3.7rem);
 }
+.progress{
+    width: clamp(2.9rem, 1.45rem + 3vw, 3rem) !important;
+}
 .boxIcon .reactI img{
     width: 120px; 
     margin-bottom: 0.6rem;
