@@ -126,7 +126,7 @@ export const Proyects = () => {
               <img
                 classname={style.Computerimg}
                 src="images/proyects/lavozdemontepngg.png"
-                alt=""
+                alt="la voz de monte"
               />
 
               <img src="images/proyects/lavozdemontemobile.png" alt="" />
